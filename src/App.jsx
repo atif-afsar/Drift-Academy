@@ -4,6 +4,7 @@ import Hero from './Components/Hero'
 import ProgramsSection from './Components/ProgramsSection'
 import AdvantageSection from './Components/AdvantageSection'
 import TestimonialsSection from './Components/TestimonialsSection'
+import CTASection from './Components/CTASection'
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
     <ProgramsSection />
     <AdvantageSection />
     <TestimonialsSection />
+    <CTASection />
     </div>
   )
 }
