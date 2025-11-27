@@ -1,79 +1,72 @@
 import React from "react";
+import Marquee from "react-fast-marquee";
 
 export default function TestimonialsSection() {
   const testimonials = [
     {
-      name: "Student 1",
-      text: "Drift Academy helped me stay consistent and focused throughout my exam preparation.",
-      img: "https://via.placeholder.com/80" // placeholder image
+      id: 1,
+      name: "Rohan Sharma",
+      college: "IIT Bombay",
+      text: "The faculty at Drift Academy is incredible. Their personalized approach helped me crack the JEE exam and get into my dream college.",
+      img: "https://via.placeholder.com/80" // placeholder avatar
     },
     {
-      name: "Student 2",
-      text: "The teachers are highly supportive, and the study material is very helpful.",
+      id: 2,
+      name: "Priya Singh",
+      college: "AIIMS Delhi",
+      text: "Thanks to the rigorous test series and doubt-clearing sessions, I was able to score exceptionally well in NEET. Highly recommended!",
       img: "https://via.placeholder.com/80"
     },
     {
-      name: "Student 3",
-      text: "Regular mock tests and doubt classes made a huge difference in my preparation.",
+      id: 3,
+      name: "Ankit Kumar",
+      college: "NTSE Scholar",
+      text: "The foundation course was a game-changer for me. It built a strong base that is still helping me in my higher studies.",
       img: "https://via.placeholder.com/80"
     },
     {
-      name: "Student 4",
-      text: "A great environment to learn and grow with excellent faculty guidance.",
-      img: "https://via.placeholder.com/80"
-    },
-    {
-      name: "Student 5",
-      text: "Personalized feedback and consistent improvements helped me boost my confidence.",
+      id: 4,
+      name: "Sneha Verma",
+      college: "JEE Topper",
+      text: "The study material and consistent mentorship boosted my confidence. Drift Academy shaped my success journey.",
       img: "https://via.placeholder.com/80"
     },
   ];
 
   return (
-    <section className="py-20 bg-gray-50">
-      <h2 className="text-3xl md:text-4xl font-bold text-center mb-10">
-        What Our Students Say
-      </h2>
+    <section className="w-full bg-white py-16">
+      <div className="max-w-7xl mx-auto px-6">
+        {/* Heading */}
+        <h2 className="text-3xl font-bold text-center mb-10">
+          Success Stories From Our Students
+        </h2>
 
-      {/* Marquee Container */}
-      <div className="relative overflow-hidden whitespace-nowrap py-6">
-        
-        <div className="animate-marquee inline-flex gap-6">
-          {testimonials.map((t, index) => (
-            <div
-              key={index}
-              className="min-w-[300px] bg-white p-6 rounded-xl shadow-md border border-gray-200"
-            >
-              <div className="flex items-center gap-4 mb-4">
-                <img
-                  src={t.img}
-                  alt={t.name}
-                  className="w-16 h-16 rounded-full object-cover border"
-                />
-                <h3 className="text-lg font-semibold text-gray-900">{t.name}</h3>
-              </div>
-              <p className="text-gray-600">{t.text}</p>
-            </div>
-          ))}
+        {/* Marquee Slider */}
+        <Marquee pauseOnHover={true} speed={40} gradient={false} className="py-4">
 
-          {/* Duplicate for seamless loop */}
-          {testimonials.map((t, index) => (
-            <div
-              key={"dup-" + index}
-              className="min-w-[300px] bg-white p-6 rounded-xl shadow-md border border-gray-200"
-            >
-              <div className="flex items-center gap-4 mb-4">
+          <div className="flex gap-8">
+            {testimonials.map((item) => (
+              <div
+                key={item.id}
+                className="min-w-[320px] max-w-[350px] bg-white border border-gray-200 rounded-xl shadow-sm p-6 flex flex-col items-center text-center"
+              >
                 <img
-                  src={t.img}
-                  alt={t.name}
-                  className="w-16 h-16 rounded-full object-cover border"
+                  src={item.img}
+                  alt={item.name}
+                  className="w-20 h-20 rounded-full object-cover mb-3"
                 />
-                <h3 className="text-lg font-semibold text-gray-900">{t.name}</h3>
+
+                <p className="text-gray-700 italic text-sm leading-relaxed">
+                  "{item.text}"
+                </p>
+
+                <h4 className="mt-4 font-semibold text-gray-900">{item.name}</h4>
+                <p className="text-blue-800 text-sm font-medium">{item.college}</p>
               </div>
-              <p className="text-gray-600">{t.text}</p>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
+
+        </Marquee>
       </div>
     </section>
   );
