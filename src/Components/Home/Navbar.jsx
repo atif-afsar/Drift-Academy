@@ -12,7 +12,7 @@ export default function Navbar() {
         {/* Logo */}
         <div className="flex items-center gap-2">
           <img 
-            src="./public/assets/images/logo.jpeg" 
+            src="/assets/images/logo.jpeg" 
             alt="Drift Academy Logo"
             className="h-13 w-auto"
           />
@@ -22,18 +22,18 @@ export default function Navbar() {
         <ul className="hidden md:flex items-center  gap-8 text-gray-700 font-medium text-xl">
           <li><Link to="/" className="hover:text-blue-700 transition">Home</Link></li>
           <li><Link to="/about" className="hover:text-blue-700 transition">About</Link></li>
-          <li><a href="/courses" className="hover:text-blue-700 transition">Courses</a></li>
-          <li><a href="/testimonials" className="hover:text-blue-700 transition">Results</a></li>
-          <li><a href="/contact" className="hover:text-blue-700 transition">Contact</a></li>
+          <li><Link to="/courses" className="hover:text-blue-700 transition">Courses</Link></li>
+          <li><Link to="/testimonials" className="hover:text-blue-700 transition">Results</Link></li>
+          <li><Link to="/contact" className="hover:text-blue-700 transition">Contact</Link></li>
         </ul>
 
         {/* Contact Button */}
-        <a
-          href="/contact"
+        <Link
+          to="/contact"
           className="hidden md:block bg-yellow-400 px-5 py-2 rounded-lg text-xl font-semibold text-gray-900 hover:bg-yellow-500 transition"
         >
           Enroll Now
-        </a>
+        </Link>
 
         {/* Mobile Menu Button */}
         <button
@@ -50,17 +50,17 @@ export default function Navbar() {
           <ul className="flex flex-col gap-4 text-gray-700 font-medium">
             <li><Link to="/" className="block py-2">Home</Link></li>
             <li><Link to="/about" className="block py-2">About</Link></li>
-            <li><a href="/courses" className="block py-2">Courses</a></li>
-            <li><a href="/testimonials" className="block py-2">Results</a></li>
-            <li><a href="/contact" className="block py-2">Contact</a></li>
+            <li><Link to="/courses" className="block py-2">Courses</Link></li>
+            <li><Link to="/testimonials" className="block py-2">Results</Link></li>
+            <li><Link to="/contact" className="block py-2">Contact</Link></li>
           </ul>
 
-          <a
-            href="/contact"
+          <Link
+            to="/contact"
             className="mt-4 inline-block bg-yellow-400 w-full text-center py-2 rounded-lg font-semibold text-gray-900 hover:bg-yellow-500 transition"
           >
              Enroll Now
-          </a>
+          </Link>
         </div>
       )}
     </nav>

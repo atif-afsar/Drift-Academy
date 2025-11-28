@@ -3,7 +3,7 @@ import React from "react";
 export default function CTASection() {
   return (
     <section className="w-full py-16 px-4 flex justify-center">
-      <div className="w-full max-w-6xl bg-[#0A2540] text-white rounded-2xl py-12 px-6 md:px-16 text-center shadow-lg">
+      <div className="w-full max-w-6xl bg-[#0A1A66] text-white rounded-2xl py-12 px-6 md:px-16 text-center shadow-lg">
         
         {/* Heading */}
         <h2 className="text-2xl md:text-4xl font-extrabold leading-snug">
