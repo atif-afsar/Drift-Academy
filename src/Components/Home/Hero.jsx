@@ -18,7 +18,7 @@ export default function Hero() {
         <div className="absolute inset-0 bg-black/40"></div>
 
         {/* Content */}
-        <div className="absolute inset-0 flex flex-col justify-center px-4 sm:px-6 lg:px-24">
+        <div className="absolute inset-0 flex flex-col justify-center px-4 sm:px-6  mt-[110px] lg:px-24">
           
           <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-extrabold text-white max-w-2xl leading-tight">
             Achieve Your <span className="text-yellow-400">Dream</span>

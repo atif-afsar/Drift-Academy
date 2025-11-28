@@ -35,7 +35,7 @@ export default function AdvantageSection() {
       {/* Heading */}
       <div className="text-center mb-10">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-          The Drift Academy Advantage
+          The Drift Academy<span className="text-yellow-400"> Advantages</span>
         </h2>
         <p className="text-gray-600 mt-2 md:text-lg">
           What makes us the trusted choice for competitive exam preparation.

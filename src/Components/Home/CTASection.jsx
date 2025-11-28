@@ -7,7 +7,7 @@ export default function CTASection() {
         
         {/* Heading */}
         <h2 className="text-2xl md:text-4xl font-extrabold leading-snug">
-          Ready to Start Your Journey?
+          Ready to Start Your <span className="text-yellow-400">journey</span>?
         </h2>
 
         {/* Subtitle */}

@@ -38,7 +38,7 @@ export default function TestimonialsSection() {
       <div className="max-w-7xl mx-auto px-6">
         {/* Heading */}
         <h2 className="text-3xl font-bold text-center mb-10">
-          Success Stories From Our Students
+          Success Stories From Our <span className="text-yellow-400">Student</span>
         </h2>
 
         {/* Marquee Slider */}
