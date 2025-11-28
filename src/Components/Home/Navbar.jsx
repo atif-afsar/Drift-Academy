@@ -23,7 +23,7 @@ export default function Navbar() {
           <li><Link to="/" className="hover:text-blue-700 transition">Home</Link></li>
           <li><Link to="/about" className="hover:text-blue-700 transition">About</Link></li>
           <li><Link to="/courses" className="hover:text-blue-700 transition">Courses</Link></li>
-          <li><Link to="/testimonials" className="hover:text-blue-700 transition">Results</Link></li>
+          <li><Link to="/results" className="hover:text-blue-700 transition">Results</Link></li>
           <li><Link to="/contact" className="hover:text-blue-700 transition">Contact</Link></li>
         </ul>
 
