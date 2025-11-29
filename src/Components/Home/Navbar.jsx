@@ -58,7 +58,7 @@ export default function Navbar() {
 
           <Link
             to="/contact"
-            className="mt-4 inline-block bg-yellow-400 w-full text-center py-2 rounded-lg font-semibold text-gray-900 hover:bg-yellow-500 transition"
+            className="mt-4 inline-block bg-[#f6821c] w-full text-center py-2 rounded-lg font-semibold text-gray-900 hover:bg-yellow-500 transition"
           >
              Enroll Now
           </Link>

@@ -7,10 +7,12 @@ import Courses from './Pages/Courses'
 import Result from './Pages/Result'
 import Contact from './Pages/Contact'
 import Enquiry from './Pages/Enquiry'
+import SmoothScroll from './Pages/SmoothScroll'
 
 const App = () => {
   return (
     <Router>
+     <SmoothScroll /> 
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
