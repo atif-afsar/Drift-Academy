@@ -1,17 +1,18 @@
 import React from 'react'
 import ResultsHero from '../Components/Results/ResultsHero'
-import ResultsHighlights from '../Components/Results/ResultsHighlights'
-import ResultsToppers from '../Components/Results/ResultsToppers'
-import ResultsYearwise from '../Components/Results/ResultsYearwise'
+
+import StatsSection from '../Components/Results/StatsSection'
+import StudentStories from '../Components/Results/StudentStories'
+import TopperVideo from '../Components/Results/TopperVideo'
 import ResultsCTA from '../Components/Results/ResultsCTA'
 
 const Result = () => {
   return (
     <div>
       <ResultsHero />
-      <ResultsHighlights />
-      <ResultsToppers />
-      <ResultsYearwise />
+      <StatsSection />
+      <StudentStories />
+      <TopperVideo />
       <ResultsCTA />
     </div>
   )

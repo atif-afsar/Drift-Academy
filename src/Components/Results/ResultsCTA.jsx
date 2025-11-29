@@ -1,18 +1,18 @@
 export default function ResultsCTA() {
   return (
-    <section className="py-16 bg-[#0A1A66] text-white text-center">
-      <div className="max-w-4xl mx-auto px-6">
+    <section className="w-full py-16 bg-yellow-100">
+      <div className="max-w-6xl mx-auto px-6 text-center">
 
-        <h2 className="text-2xl md:text-3xl font-semibold mb-4">
-          Want to Become the Next Top Ranker?
+        <h2 className="text-3xl font-bold mb-4">
+          Ready to Start Your Success Story?
         </h2>
 
-        <p className="text-gray-300 mb-6">
-          Join Drift Academy and start your journey towards excellence today.
+        <p className="text-gray-700 max-w-2xl mx-auto mb-6">
+          Join thousands of students who trusted Drift Academy to achieve their dreams.
         </p>
 
-        <button className="bg-yellow-400 text-black px-6 py-3 rounded-lg font-semibold hover:bg-yellow-500">
-          Enroll Now
+        <button className="bg-yellow-500 px-8 py-3 rounded-lg text-lg font-semibold">
+          Explore Our Programs
         </button>
 
       </div>
