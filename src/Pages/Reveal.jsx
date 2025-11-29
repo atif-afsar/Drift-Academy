@@ -3,7 +3,7 @@ import { useInView } from "react-intersection-observer";
 
 export default function Reveal({ children, delay = 0 }) {
   const [ref, inView] = useInView({
-    triggerOnce: false, // 👈 plays every time
+    triggerOnce: true, // 👈 plays every time
     threshold: 0.2,
   });
 
