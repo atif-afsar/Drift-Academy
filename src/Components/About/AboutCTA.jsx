@@ -9,7 +9,7 @@ export default function AboutCTA() {
           Join Drift Academy and transform your skills into a successful career.
         </p>
 
-        <button className="bg-yellow-500 text-black px-6 py-3 rounded-lg font-semibold hover:bg-yellow-600">
+        <button className="bg-[#f6821c] text-white px-6 py-3 rounded-lg font-semibold hover:bg-yellow-600">
           Enroll for Course
         </button>
       </div>

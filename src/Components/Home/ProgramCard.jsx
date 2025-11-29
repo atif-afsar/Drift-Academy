@@ -14,7 +14,7 @@ export default function ProgramCard({ image, title, subtitle, description }) {
       </div>
 
       {/* Text */}
-      <h3 className="mt-4 text-xl font-semibold text-gray-900">{title}</h3>
+      <h3 className="mt-4 text-xl font-semibold text-gray-900 heading-primary">{title}</h3>
       <p className="text-sm text-gray-500">{subtitle}</p>
 
       <p className="mt-3 text-gray-700 text-sm leading-relaxed flex-grow">
@@ -23,7 +23,7 @@ export default function ProgramCard({ image, title, subtitle, description }) {
 
       <a
         href="/programs"
-        className="mt-4 text-blue-700 font-semibold hover:underline"
+        className="mt-4 text-zinc-700 font-semibold hover:underline"
       >
         Learn More →
       </a>

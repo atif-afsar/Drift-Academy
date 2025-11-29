@@ -15,7 +15,7 @@ export default function CoursesFAQ() {
       <div className="max-w-4xl mx-auto px-6">
 
         <h2 className="text-3xl font-bold text-center mb-12">
-          Frequently Asked <span className="text-yellow-400">Questions</span>
+          Frequently Asked <span className="text-[#f6821c]">Questions</span>
         </h2>
 
         <div className="space-y-4">

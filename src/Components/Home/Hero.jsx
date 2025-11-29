@@ -21,7 +21,7 @@ export default function Hero() {
         <div className="absolute inset-0 flex flex-col justify-center px-4 sm:px-6  mt-[110px] lg:px-24">
           
           <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-extrabold text-white max-w-2xl leading-tight">
-            Achieve Your <span className="text-yellow-400">Dream</span>
+            Achieve Your <span className=" text-white">Dream</span>
           </h1>
 
           <p className="mt-3 text-white/90 text-base sm:text-lg md:text-2xl max-w-xl">
@@ -30,9 +30,9 @@ export default function Hero() {
 
           <a
             href="/enroll"
-            className="mt-6 bg-yellow-400 text-gray-900 text-base sm:text-lg md:text-xl font-semibold px-6 py-3 rounded-md w-fit hover:bg-yellow-500 transition"
+            className="mt-6 bg-[#f6821c] text-white text-base sm:text-lg md:text-xl font-bold px-6 py-3 rounded-md w-fit hover:bg-yellow-500 transition"
           >
-            Enroll Now
+            ENROLL NOW
           </a>
         </div>
 

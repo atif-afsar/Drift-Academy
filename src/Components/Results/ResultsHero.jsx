@@ -5,8 +5,8 @@ export default function ResultsHero() {
 
         {/* LEFT SIDE TEXT */}
         <div>
-          <h1 className="text-4xl pt-6 md:text-6xl  font-bold leading-tight text-[#0A1A66]">
-            Success Stories <br /> That Inspire
+          <h1 className="text-4xl pt-6 md:text-6xl  font-bold leading-tight heading-primary">
+            Success Stories <br /> That <span className="text-accent">Inspire</span>
           </h1>
 
           <p className="text-gray-700 md:text-xl mt-4 max-w-md">
@@ -15,7 +15,7 @@ export default function ResultsHero() {
           </p>
 
           <div className="flex gap-4 mt-6">
-            <button className="bg-yellow-400 px-6 py-3 font-semibold rounded-lg shadow-sm hover:bg-yellow-500">
+            <button className="bg-[#f6821c] text-white px-6 py-3 font-semibold rounded-lg shadow-sm hover:bg-yellow-600">
               Read More
             </button>
 

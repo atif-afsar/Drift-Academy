@@ -31,8 +31,8 @@ export default function ProgramsSection() {
       
       {/* Heading */}
       <div className="text-center mb-12">
-        <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900">
-          Explore Our Flagship <span className="text-yellow-400">Programs</span>
+        <h2 className="text-3xl md:text-4xl font-extrabold heading-primary">
+          Explore Our Flagship <span className="text-accent">Programs</span>
         </h2>
         <p className="mt-3 text-gray-600 md:text-lg">
           Choose the path that aligns with your goals.

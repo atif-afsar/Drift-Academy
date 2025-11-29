@@ -42,7 +42,7 @@ export default function CoursesList() {
       <div className="max-w-6xl mx-auto px-6">
 
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-          Our Premier <span className="text-yellow-400">Courses</span>
+          Our Premier <span className="text-[#f6821c]">Courses</span>
         </h2>
 
         <div className="grid md:grid-cols-3 gap-10">
@@ -65,7 +65,7 @@ export default function CoursesList() {
                 ))}
               </ul>
 
-              <button className="w-full bg-yellow-400 px-4 py-2 rounded-lg font-semibold hover:bg-yellow-500">
+              <button className="w-full text-white bg-[#f6821c] px-4 py-2 rounded-lg font-semibold hover:bg-yellow-600">
                 {course.button}
               </button>
 

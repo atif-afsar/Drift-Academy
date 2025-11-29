@@ -4,7 +4,7 @@ export default function AboutStory() {
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center px-6">
         
         <div>
-          <h2 className="text-3xl font-bold mb-4">Our Story, <span className="text-yellow-400 ">Mission & Vision</span></h2>
+          <h2 className="text-3xl font-bold mb-4">Our Story, <span className="text-[#f6821c] ">Mission & Vision</span></h2>
           
           <p className="text-gray-600 leading-relaxed mb-4">
             Drift Academy was established with the goal of bridging the gap between 

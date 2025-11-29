@@ -5,25 +5,25 @@ export default function AdvantageSection() {
   const advantages = [
     {
       id: 1,
-      icon: <HiAcademicCap className="text-indigo-600 text-4xl" />,
+      icon: <HiAcademicCap className="text-[#015A9A] text-4xl" />,
       title: "Experienced Faculty",
       desc: "Learn from expert mentors with years of teaching experience."
     },
     {
       id: 2,
-      icon: <HiBookOpen className="text-indigo-600 text-4xl" />,
+      icon: <HiBookOpen className="text-[#015A9A] text-4xl" />,
       title: "Quality Study Material",
       desc: "Updated notes & exam-focused learning resources."
     },
     {
       id: 3,
-      icon: <HiUserGroup className="text-indigo-600 text-4xl" />,
+      icon: <HiUserGroup className="text-[#015A9A] text-4xl" />,
       title: "Doubt Support",
       desc: "Dedicated doubt-solving sessions for every student."
     },
     {
       id: 4,
-      icon: <HiTrendingUp className="text-indigo-600 text-4xl" />,
+      icon: <HiTrendingUp className="text-[#015A9A] text-4xl" />,
       title: "Performance Tracking",
       desc: "Regular tests & analytics to track student growth."
     }
@@ -34,8 +34,8 @@ export default function AdvantageSection() {
       
       {/* Heading */}
       <div className="text-center mb-10">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-          The Drift Academy<span className="text-yellow-400"> Advantages</span>
+        <h2 className="text-3xl md:text-4xl font-bold heading-primary">
+          The Drift Academy<span className="text-accent"> Advantages</span>
         </h2>
         <p className="text-gray-600 mt-2 md:text-lg">
           What makes us the trusted choice for competitive exam preparation.
@@ -51,7 +51,7 @@ export default function AdvantageSection() {
           >
             <div className="flex justify-center">{item.icon}</div>
 
-            <h3 className="mt-4 text-xl font-semibold text-center text-gray-900">
+            <h3 className="mt-4 text-xl font-semibold text-center text-gray-900 heading-primary">
               {item.title}
             </h3>
 

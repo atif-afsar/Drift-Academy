@@ -6,8 +6,8 @@ export default function CTASection() {
       <div className="w-full max-w-6xl bg-[#0A1A66] text-white rounded-2xl py-12 px-6 md:px-16 text-center shadow-lg">
         
         {/* Heading */}
-        <h2 className="text-2xl md:text-4xl font-extrabold leading-snug">
-          Ready to Start Your <span className="text-yellow-400">journey</span>?
+        <h2 className="text-2xl md:text-4xl font-extrabold leading-snug text-white">
+          Ready to Start Your <span className="text-accent">journey? </span>
         </h2>
 
         {/* Subtitle */}
@@ -18,8 +18,8 @@ export default function CTASection() {
         {/* CTA Button */}
         <a
           href="/enroll"
-          className="mt-6 inline-block bg-yellow-400 text-gray-900 font-semibold 
-                     px-8 py-3 rounded-lg text-lg hover:bg-yellow-500 transition"
+          className="mt-6 inline-block bg-[#f6821c] text-white font-bold 
+                     px-8 py-3 rounded-lg text-lg hover:bg-yellow-600 transition"
         >
           Enroll Now
         </a>

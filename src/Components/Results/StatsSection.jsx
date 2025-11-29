@@ -15,8 +15,8 @@ export default function StatsSection() {
             key={i}
             className="p-6 bg-gray-100 rounded-xl text-center border"
           >
-            <h2 className="text-3xl font-bold text-[#0A1A66]">{s.number}</h2>
-            <p className="text-gray-600">{s.label}</p>
+            <h2 className="text-3xl font-bold heading-primary">{s.number}</h2>
+            <p className="text-gray-700">{s.label}</p>
           </div>
         ))}
 

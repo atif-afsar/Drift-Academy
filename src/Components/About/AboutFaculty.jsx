@@ -9,7 +9,7 @@ export default function AboutFaculty() {
   return (
     <section className="w-full py-20">
       <div className="max-w-6xl mx-auto px-6 text-center">
-        <h2 className="text-3xl font-bold mb-12">Meet Our Esteemed <span className="text-yellow-400 ">Faculty</span></h2>
+        <h2 className="text-3xl font-bold mb-12">Meet Our Esteemed <span className="text-[#f6821c] ">Faculty</span></h2>
 
         <div className="grid md:grid-cols-4 gap-10">
           {faculty.map((f, i) => (

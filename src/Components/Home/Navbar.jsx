@@ -24,15 +24,16 @@ export default function Navbar() {
           <li><Link to="/about" className="hover:text-blue-700 transition">About</Link></li>
           <li><Link to="/courses" className="hover:text-blue-700 transition">Courses</Link></li>
           <li><Link to="/results" className="hover:text-blue-700 transition">Results</Link></li>
+          <li><Link to="/enquiry" className="hover:text-blue-700 transition">Enquiry</Link></li>
           <li><Link to="/contact" className="hover:text-blue-700 transition">Contact</Link></li>
         </ul>
 
         {/* Contact Button */}
         <Link
           to="/contact"
-          className="hidden md:block bg-yellow-400 px-5 py-2 rounded-lg text-xl font-semibold text-gray-900 hover:bg-yellow-500 transition"
+          className="hidden md:block bg-[#f6821c] px-5 py-2 rounded-lg text-xl font-semibold text-white hover:bg-yellow-500 transition"
         >
-          Enroll Now
+          ENROLL NOW
         </Link>
 
         {/* Mobile Menu Button */}
