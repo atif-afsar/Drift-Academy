@@ -17,7 +17,7 @@ export default function ProgramCard({ image, title, subtitle, description }) {
       <h3 className="mt-4 text-xl font-semibold text-gray-900 heading-primary">{title}</h3>
       <p className="text-sm text-gray-500">{subtitle}</p>
 
-      <p className="mt-3 text-gray-700 text-sm leading-relaxed flex-grow">
+      <p className="mt-3 text-gray-700 text-sm leading-relaxed">
         {description}
       </p>
 

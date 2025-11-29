@@ -118,7 +118,7 @@ export default function Enquiry() {
           {/* Submit Button */}
           <div>
             <button
-              className="bg-[#020A33] text-white px-6 py-2 rounded shadow hover:bg-[#04124d] transition"
+              className="bg-[#f6821c] text-white font-bold px-6 py-2 rounded shadow hover:bg-[#b25300] transition"
             >
               Submit
             </button>
