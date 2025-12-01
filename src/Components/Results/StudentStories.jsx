@@ -40,7 +40,7 @@ export default function StudentStories() {
           {/* Marquee Track */}
           <div className="flex gap-3 sm:gap-6 animate-marquee">
             {[...students, ...students].map((s, i) => (
-              <div key={i} className="min-w-[200px] sm:min-w-[280px]">
+              <div key={i} className="min-w-[150px] sm:min-w-60">
                 <StudentCard {...s} />
               </div>
             ))}
