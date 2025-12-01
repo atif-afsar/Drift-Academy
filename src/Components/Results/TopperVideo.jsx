@@ -2,14 +2,27 @@ export default function TopperVideo() {
   return (
     <section className="w-full py-16 bg-white">
       <div className="max-w-6xl mx-auto px-6">
-        <h2 className="text-3xl font-bold mb-6 heading-primary">Hear From Our <span className="text-accent">Toppers</span></h2>
+        <h2 className="text-3xl font-bold mb-6 heading-primary">
+          Hear From Our <span className="text-accent">Toppers</span>
+        </h2>
 
         <div className="aspect-video w-full rounded-xl overflow-hidden">
-          <video
+          {/* <video
             src="/assets/videos/videoplayback (9).mp4"
             controls
             className="w-full h-full object-cover"
-          />
+          /> */}
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/7HGv6TWQ8ZQ?si=xKhgxinZkdGYuTt_"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+             className="w-full h-full object-cover"
+          ></iframe>
         </div>
 
         <p className="text-center text-gray-600 mt-3">

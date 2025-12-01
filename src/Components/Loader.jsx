@@ -5,7 +5,7 @@ export default function Loader({ setLoading }) {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setLoading(false);
-    }, 2500);
+    }, 1000);
 
     return () => clearTimeout(timeout);
   }, [setLoading]);
@@ -16,7 +16,7 @@ export default function Loader({ setLoading }) {
         className="fixed inset-0 bg-white flex items-center justify-center z-[9999]"
         initial={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 0.3 }}
       >
         {/* LOGO ANIMATION */}
         <motion.img

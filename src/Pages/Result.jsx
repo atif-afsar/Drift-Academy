@@ -4,26 +4,21 @@ import StatsSection from '../Components/Results/StatsSection'
 import StudentStories from '../Components/Results/StudentStories'
 import TopperVideo from '../Components/Results/TopperVideo'
 import ResultsCTA from '../Components/Results/ResultsCTA'
-import Reveal from './Reveal'
+// import Reveal from './Reveal'
 
 const Result = () => {
   return (
     <div>
-     <Reveal>
+   
       <ResultsHero />
-     </Reveal>
-     <Reveal>
+   
       <StatsSection />
-     </Reveal>
-      <Reveal>
+    
       <StudentStories />
-     </Reveal>
-      <Reveal>
+    
       <TopperVideo />
-     </Reveal>
-      <Reveal>
+    
       <ResultsCTA />
-     </Reveal>
     </div>
   )
 }
