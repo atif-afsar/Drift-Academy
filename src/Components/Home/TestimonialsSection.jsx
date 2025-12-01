@@ -8,7 +8,7 @@ export default function TestimonialsSection() {
       name: "Rohan Sharma",
       college: "IIT Bombay",
       text: "The faculty at Drift Academy is incredible. Their personalized approach helped me crack the JEE exam and get into my dream college.",
-      img: "https://via.placeholder.com/80" // placeholder avatar
+      img: "https://via.placeholder.com/80" 
     },
     {
       id: 2,
@@ -33,6 +33,9 @@ export default function TestimonialsSection() {
     },
   ];
 
+  // Duplicate testimonials for seamless marquee
+  const duplicatedTestimonials = [...testimonials, ...testimonials];
+
   return (
     <section className="w-full bg-white py-16">
       <div className="max-w-7xl mx-auto px-6">
@@ -42,13 +45,12 @@ export default function TestimonialsSection() {
         </h2>
 
         {/* Marquee Slider */}
-        <Marquee pauseOnHover={true} speed={40} gradient={false} className="py-4">
-
-          <div className="flex gap-8">
-            {testimonials.map((item) => (
+        <div className="w-full overflow-hidden">
+          <Marquee pauseOnHover={true} speed={40} gradient={false} className="py-4">
+            {duplicatedTestimonials.map((item, index) => (
               <div
-                key={item.id}
-                className="min-w-[320px] max-w-[350px] bg-white border border-gray-200 rounded-xl shadow-sm p-6 flex flex-col items-center text-center"
+                key={`${item.id}-${index}`}
+                className="min-w-[320px] max-w-[350px] bg-white border border-gray-200 rounded-xl shadow-sm p-6 flex flex-col items-center text-center mx-4"
               >
                 <img
                   src={item.img}
@@ -64,9 +66,8 @@ export default function TestimonialsSection() {
                 <p className="text-zinc-800 text-sm font-medium">{item.college}</p>
               </div>
             ))}
-          </div>
-
-        </Marquee>
+          </Marquee>
+        </div>
       </div>
     </section>
   );

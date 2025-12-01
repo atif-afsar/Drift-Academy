@@ -1,8 +1,8 @@
 const faculty = [
-  { name: "Azim Sir", role: "Biology", image: "https://driftacademy.in/images/azim.jpg" },
-  { name: "Nadeem Sir", role: "Physics", image: "https://driftacademy.in/images/nadeem.jpg" },
-  { name: "Kush Sir", role: "Mathematics", image: "https://driftacademy.in/images/kushh.jpg" },
-  { name: "Sohaib Sir", role: "Chemistry", image: "https://driftacademy.in/images/sohaib.jpg" },
+  { name: "Azim Sir", role: "Biology", image: "https://driftacademy.in/images/azim.jpg", des:"BIOLOGY is the study of life, its just not remembering the fact but connecting the dots logically" },
+  { name: "Nadeem Sir", role: "Physics", image: "https://driftacademy.in/images/nadeem.jpg", des:"Learning PHYSICS for NEET-JEE is all about creating equations using physical laws and then solving those equations using basic MATHS." },
+  { name: "Kush Sir", role: "Mathematics", image: "https://driftacademy.in/images/kushh.jpg", des:"MATHS is the language in which every SCIENCE is qualified.LEARN it to apply." },
+  { name: "Sohaib Sir", role: "Chemistry", image: "https://driftacademy.in/images/sohaib.jpg", des:"CHEMISTRY is the science, sometimes with EXPECTATION but that too is another EXPLAINABLE science." },
 ];
 
 export default function AboutFaculty() {
@@ -20,7 +20,8 @@ export default function AboutFaculty() {
                 className="w-32 h-32 object-cover rounded-full shadow-lg"
               />
               <h3 className="text-lg font-semibold mt-4">{f.name}</h3>
-              <p className="text-gray-600">{f.role}</p>
+              <p className="text-[#f6821c]">{f.role}</p>
+              <p className="text-gray-600 text-sm">{f.des}</p>
             </div>
           ))}
         </div>

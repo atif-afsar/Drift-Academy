@@ -19,7 +19,7 @@ export default function AboutStory() {
         </div>
 
         <img
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuDe_G_nGu03ZhPFN6cMGhK7RGhjDZu-89OxQE-byUGnW0y2kFU6zuInf1Laa-0yqNT0uRMM94OHknnWTyvV3pmla4wE32o849DDhkeepVA1qJIVkRo6M7XN_hXH-n5sTlyTmNOOJdBUpihduLYw5Y4xiXgDIShMWGZM79wKMe_hVulz5T8KR3MsXnjggFH6cblaqjY0v2q1gukSoJRQxioaaE-D5d4DnfpOIPzmJTcQKwNXZHQeAOLM_yyDbC2aUp3ahvQlsYJBczA"
+          src="https://driftacademy.in/images/grp.jpg"
           alt="our team"
           className="rounded-2xl w-full shadow-lg"
         />
