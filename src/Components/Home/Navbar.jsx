@@ -52,7 +52,7 @@ export default function Navbar() {
             <li><Link to="/" className="block py-2">Home</Link></li>
             <li><Link to="/about" className="block py-2">About</Link></li>
             <li><Link to="/courses" className="block py-2">Courses</Link></li>
-            <li><Link to="/testimonials" className="block py-2">Results</Link></li>
+            <li><Link to="/results" className="block py-2">Results</Link></li>
             <li><Link to="/contact" className="block py-2">Contact</Link></li>
           </ul>
 

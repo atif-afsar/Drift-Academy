@@ -28,7 +28,7 @@ export default function ResultsHero() {
         {/* RIGHT SIDE IMAGE */}
         <div className="w-full">
           <img
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhM5ezeYU_OyJWH1Io-keZwpr-R6PDug-lEwF52hcL0X9UIQJD50-BrvjGhJUzbb4ndTjYXvaf4Ni-P5hQuP0_4rJrEm7JgQ3ib0-O7R_VKpB8sVDzyXUNRgKSrwGyLvwQ98pXB1eNXJXhZtzD6pFR3f_H1lMNXIzP-Y8wDGYE_DUhygLr-mBJAia8sqLEzGDLXMDZ6rlLcNBEPX9Ya3n33QRaxeo4242hCB60Kp4Xf9WZ4BIOMiRGHP2P_Q3kQOXGOTH8e0o-RVA" 
+            src="./public/assets/images/image.png" 
             alt="Students Celebrating"
             className="w-full lg:w-[700px] sm:pt-6 rounded-xl object-cover shadow-md"
           />

@@ -2,42 +2,77 @@ import React from "react";
 
 export default function Hero() {
   return (
-    <section className="w-full mt-20 relative">
-      
-      {/* Hero Container */}
-      <div className="relative w-full h-[420px] sm:h-[460px] md:h-[520px] lg:h-[620px]">
-
-        {/* Background Image */}
-        <img
-          src="./public/assets/images/hero.jpg"  // Correct React path
-          alt="students"
+    <section className="w-full mt-20 relative overflow-hidden">
+      {/* Video Background */}
+      <div className="relative w-full h-[380px] sm:h-[450px] md:h-[550px] lg:h-[680px]">
+        <iframe
           className="w-full h-full object-cover"
-        />
-
-        {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-black/40"></div>
+          src="https://www.youtube.com/embed/t88fZ6u-cwM?autoplay=1&mute=1&controls=0&loop=1&playlist=t88fZ6u-cwM&playsinline=1&modestbranding=1&showinfo=0&rel=0"
+          title="Hero Background Video"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          referrerPolicy="strict-origin-when-cross-origin"
+        ></iframe>
 
         {/* Content */}
-        <div className="absolute inset-0 flex flex-col justify-center px-4 sm:px-6  mt-[110px] lg:px-24">
-          
-          <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-extrabold text-white max-w-2xl leading-tight">
-            Achieve Your <span className=" text-white">Dream</span>
-          </h1>
-
-          <p className="mt-3 text-white/90 text-base sm:text-lg md:text-2xl max-w-xl">
-            With Expert Guidance & Proven Results.
-          </p>
-
-          <a
-            href="/enroll"
-            className="mt-6 bg-[#f6821c] text-white text-base sm:text-lg md:text-xl font-bold px-6 py-3 rounded-md w-fit hover:bg-yellow-500 transition"
+        <div
+          className="
+          absolute inset-0 
+          flex flex-col justify-center 
+          px-4 sm:px-6 md:px-10 lg:px-24
+          mt-28 sm:mt-32 md:mt-0
+        "
+        >
+          {/* GRADIENT BEHIND TEXT ONLY */}
+          <div
+            className="
+            max-w-2xl p-4 sm:p-6 
+            rounded-xl 
+           
+          "
           >
-            ENROLL NOW
-          </a>
+            <h1
+              className="
+              text-3xl 
+              sm:text-4xl 
+              md:text-6xl 
+              lg:text-7xl 
+              font-extrabold 
+              text-white leading-tight
+            "
+            >
+              Achieve Your <span className="text-[#f6821c]">Dream</span>
+            </h1>
+
+            <p
+              className="
+              mt-3 
+              text-white/90 
+              text-base 
+              sm:text-lg 
+              md:text-2xl
+            "
+            >
+              With Expert Guidance & Proven Results.
+            </p>
+
+            <a
+              href="/Enquiry"
+              className="
+                mt-5 inline-block 
+                bg-[#f6821c] hover:bg-[#ff9b42] 
+                text-white font-semibold 
+                text-sm sm:text-lg md:text-xl 
+                px-6 py-3 sm:px-8 sm:py-3 
+                rounded-lg shadow-lg 
+                transition-all duration-300
+              "
+            >
+              ENROLL NOW
+            </a>
+          </div>
         </div>
-
       </div>
-
     </section>
   );
 }
