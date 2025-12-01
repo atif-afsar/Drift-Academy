@@ -10,8 +10,7 @@ export default function AboutHero() {
           </h1>
 
           <p className="text-base md:text-lg text-gray-300 max-w-md mx-auto md:mx-0">
-            Discover Drift Academy’s commitment to delivering industry-ready
-            skills through expert-led training and hands-on learning.
+            DRIFT ACADEMY PVT LTD is an institute for NEET-JEE-AMU entrance exams. It is run by highly experienced mentors from different parts of our country
           </p>
         </div>
 

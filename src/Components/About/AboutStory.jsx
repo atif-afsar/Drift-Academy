@@ -7,14 +7,11 @@ export default function AboutStory() {
           <h2 className="text-3xl font-bold mb-4">Our Story, <span className="text-[#f6821c] ">Mission & Vision</span></h2>
           
           <p className="text-gray-600 leading-relaxed mb-4">
-            Drift Academy was established with the goal of bridging the gap between 
-            students and the industry. Our mission is to empower learners with the 
-            knowledge, skills, and confidence required to excel in their careers.
+           Drift Academy was founded with a vision to guide students towards top-tier entrance exams such as NEET, JEE, and AMU. Our mission is to provide high-quality coaching that equips learners with strong concepts, disciplined study strategies, and the confidence required to succeed in competitive examinations.
           </p>
           
           <p className="text-gray-600 leading-relaxed">
-            We believe in personalized mentorship, structured learning, and real-world 
-            practical exposure to ensure every learner achieves their highest potential.
+           We are led by highly experienced mentors from different parts of the country, bringing diverse expertise and proven teaching methodologies. At Drift Academy, we believe in personalized guidance, structured learning plans, and consistent practice—ensuring every student reaches their full academic potential.
           </p>
         </div>
 

@@ -8,11 +8,11 @@ export default function CoursesHero() {
           <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6"> Your Path to <br /> Academic Excellence <br /> <span className="text-[#f6821c]">Start Here</span> </h1>
 
           <p className="text-gray-300 mb-8 text-base sm:text-lg">
-            Expert-led coaching for JEE, NEET, and foundation courses designed for success.
+            Expert-led coaching for JEE, NEET, AMU and foundation courses designed for success.
           </p>
 
           <button className="bg-[#f6821c] text-white font-semibold px-6 py-3 rounded-lg hover:bg-yellow-600 transition">
-            Explore All Courses
+            Enroll Now
           </button>
         </div>
 
