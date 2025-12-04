@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 export default function ResultsHero() {
   return (
     <section className="w-full py-16 bg-white">
@@ -18,10 +19,11 @@ export default function ResultsHero() {
             <button  className="bg-[#f6821c] text-white px-6 py-3 font-semibold rounded-lg shadow-sm hover:bg-yellow-600">
              <a href="https://www.youtube.com/@driftacademypvtltd/featured"> Read More</a>
             </button>
-
+            <Link to="/courses">
             <button className="bg-gray-200 px-6 py-3 font-semibold rounded-lg hover:bg-gray-300">
               View Courses
             </button>
+            </Link>
           </div>
         </div>
 

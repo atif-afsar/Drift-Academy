@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
   return (
@@ -56,8 +57,8 @@ export default function Hero() {
               With Expert Guidance & Proven Results.
             </p>
 
-            <a
-              href="/Enquiry"
+            <Link
+              to="/contact"
               className="
                 mt-5 inline-block 
                 bg-[#f6821c] hover:bg-[#ff9b42] 
@@ -69,7 +70,7 @@ export default function Hero() {
               "
             >
               ENROLL NOW
-            </a>
+            </Link>
           </div>
         </div>
       </div>

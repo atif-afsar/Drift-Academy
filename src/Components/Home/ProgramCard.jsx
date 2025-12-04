@@ -22,7 +22,7 @@ export default function ProgramCard({ image, title, subtitle, description }) {
       </p>
 
       <a
-        href="/programs"
+        href="https://www.youtube.com/@driftacademypvtltd/videos"
         className="mt-4 text-zinc-700 font-semibold hover:underline"
       >
         Learn More →

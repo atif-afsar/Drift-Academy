@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 const courses = [
   {
     tag: "For Class XI & XII",
@@ -65,9 +66,11 @@ export default function CoursesList() {
                 ))}
               </ul>
 
-              <button className="w-full text-white bg-[#f6821c] px-4 py-2 rounded-lg font-semibold hover:bg-yellow-600">
-                {course.button}
-              </button>
+               <Link to="/enquiry">
+          <button className="bg-[#f6821c] text-white font-semibold px-6 py-3 rounded-lg hover:bg-yellow-600 transition">
+            {course.button}
+          </button>
+          </Link>
 
             </div>
           ))}

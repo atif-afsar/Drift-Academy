@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function AboutCTA() {
   return (
     <section className="w-full py-14 bg-[#0E1A2A] text-white">
@@ -9,9 +11,11 @@ export default function AboutCTA() {
           Join Drift Academy and transform your skills into a successful career.
         </p>
 
-        <button className="bg-[#f6821c] text-white px-6 py-3 rounded-lg font-semibold hover:bg-yellow-600">
-          Enroll for Course
-        </button>
+        <Link to="/enquiry">
+          <button className="bg-[#f6821c] text-white px-6 py-3 rounded-lg font-semibold hover:bg-yellow-600">
+            Enroll for Course
+          </button>
+        </Link>
       </div>
     </section>
   );

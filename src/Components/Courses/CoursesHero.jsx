@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 export default function CoursesHero() {
   return (
     <section className="w-full bg-[#0A1A66] text-white py-16 md:py-24">
@@ -10,10 +11,11 @@ export default function CoursesHero() {
           <p className="text-gray-300 mb-8 text-base sm:text-lg">
             Expert-led coaching for JEE, NEET, AMU and foundation courses designed for success.
           </p>
-
+          <Link to="/enquiry">
           <button className="bg-[#f6821c] text-white font-semibold px-6 py-3 rounded-lg hover:bg-yellow-600 transition">
             Enroll Now
           </button>
+          </Link>
         </div>
 
         {/* Right Image */}

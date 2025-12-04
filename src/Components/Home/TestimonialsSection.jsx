@@ -40,7 +40,7 @@ export default function TestimonialsSection() {
     <section className="w-full bg-white py-16">
       <div className="max-w-7xl mx-auto px-6">
         {/* Heading */}
-        <h2 className="text-3xl font-bold text-center mb-10 heading-primary">
+        <h2 className="text-3xl text-center mb-6 md:text-4xl font-bold heading-primary">
           Success Stories From Our <span className="text-accent">Student</span>
         </h2>
 

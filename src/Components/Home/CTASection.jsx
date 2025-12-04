@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function CTASection() {
   return (
@@ -16,13 +17,13 @@ export default function CTASection() {
         </p>
 
         {/* CTA Button */}
-        <a
-          href="/enroll"
+        <Link
+          to="/enquiry"
           className="mt-6 inline-block bg-[#f6821c] text-white font-bold 
                      px-8 py-3 rounded-lg text-lg hover:bg-yellow-600 transition"
         >
           Enroll Now
-        </a>
+        </Link>
 
       </div>
     </section>
