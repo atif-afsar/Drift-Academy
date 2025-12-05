@@ -15,7 +15,7 @@ export default function Navbar() {
         {/* Logo */}
         <div className="flex items-center gap-2">
           <img 
-            src="/assets/images/logo.jpeg" 
+            src="/images/logo.jpeg" 
             alt="Drift Academy Logo"
             className="h-13 w-auto"
           />
