@@ -20,7 +20,7 @@ export default function Loader({ setLoading }) {
       >
         {/* LOGO ANIMATION */}
         <motion.img
-          src="/public/images/logo.jpeg"  
+          src="/images/logo.jpeg"  
           alt="Logo"
           className="w-40 md:w-52"
           initial={{ x: 300, opacity: 0 }}        // start from right
