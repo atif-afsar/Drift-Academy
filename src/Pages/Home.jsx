@@ -5,6 +5,7 @@ import AdvantageSection from '../Components/Home/AdvantageSection'
 import TestimonialsSection from '../Components/Home/TestimonialsSection'
 import CTASection from '../Components/Home/CTASection'
 import Footer from '../Components/Home/Footer'
+import Directors from '../Components/Home/Directors'
 // import Reveal from './Reveal'
 
 const Home = () => {
@@ -25,10 +26,14 @@ const Home = () => {
 
     
         <TestimonialsSection />
+
+        <Directors />
+
      
 
     
         <CTASection />
+
      
 
       <Footer />
