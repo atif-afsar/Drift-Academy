@@ -46,7 +46,7 @@ export default function TestimonialsSection() {
 
         {/* Marquee Slider */}
         <div className="w-full overflow-hidden">
-          <Marquee pauseOnHover={true} speed={40} gradient={false} className="py-4">
+          <Marquee pauseOnHover={true} speed={30} gradient={false} className="py-4">
             {duplicatedTestimonials.map((item, index) => (
               <div
                 key={`${item.id}-${index}`}
