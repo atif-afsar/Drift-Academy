@@ -5,9 +5,12 @@ export default function EnquiryForm() {
 
   const onSubmit = async (event) => {
     event.preventDefault();
-    setResult("Sending....");
+    setResult("Sending...");
 
     const formData = new FormData(event.target);
+
+    // Append access key ONCE
+    formData.append("access_key", "5b2e5f7d-531f-46cb-8f70-804e36c770b5");
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
@@ -17,11 +20,10 @@ export default function EnquiryForm() {
     const data = await response.json();
 
     if (data.success) {
-      setResult("Form Submitted Successfully");
+      setResult("Form Submitted Successfully ✔️");
       event.target.reset();
     } else {
-      console.log("Error:", data);
-      setResult(data.message);
+      setResult(`Error: ${data.message || "Something went wrong"}`);
     }
   };
 
@@ -31,11 +33,6 @@ export default function EnquiryForm() {
 
       <form onSubmit={onSubmit}>
         {/* REQUIRED HIDDEN FIELDS */}
-        <input
-          type="hidden"
-          name="access_key"
-          value="REPLACE_WITH_FRONTEND_KEY"
-        />
         <input type="hidden" name="subject" value="New Enquiry Submission" />
         <input type="hidden" name="from_name" value="Drift Academy Enquiry Form" />
         <input type="hidden" name="botcheck" />
@@ -73,8 +70,8 @@ export default function EnquiryForm() {
             className="border rounded-md p-3 w-full"
           />
 
-          <select name="course" className="border rounded-md p-3 w-full">
-            <option>Select a course</option>
+          <select name="course" className="border rounded-md p-3 w-full" required>
+            <option value="">Select a course</option>
             <option>Class 9</option>
             <option>Class 10</option>
             <option>Class 11</option>
@@ -105,7 +102,16 @@ export default function EnquiryForm() {
           Submit
         </button>
 
-        <p className="mt-2 text-green-600">{result}</p>
+        {/* Response Message */}
+        {result && (
+          <p
+            className={`mt-3 font-medium ${
+              result.includes("Successfully") ? "text-green-600" : "text-red-600"
+            }`}
+          >
+            {result}
+          </p>
+        )}
 
         <p className="text-xs text-gray-500 mt-2">
           We respect your privacy. Your information is safe with us.

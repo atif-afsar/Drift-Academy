@@ -5,9 +5,10 @@ export default function Enquiry() {
 
   const onSubmit = async (event) => {
     event.preventDefault();
-    setResult("Sending....");
+    setResult("Sending...");
 
     const formData = new FormData(event.target);
+    formData.append("access_key", "5b2e5f7d-531f-46cb-8f70-804e36c770b5");
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
@@ -17,46 +18,30 @@ export default function Enquiry() {
     const data = await response.json();
 
     if (data.success) {
-      setResult("Form Submitted Successfully");
+      setResult("Form Submitted Successfully ✔️");
       event.target.reset();
     } else {
-      console.log("Error:", data);
-      setResult(data.message);
+      setResult(`Error: ${data.message || "Something went wrong"}`);
     }
   };
 
   return (
     <div className="bg-[#F5F7FB] min-h-screen py-20 px-4">
-      <div className="max-w-4xl mx-auto bg-white p-8 shadow-md rounded-lg">
+      <div className="max-w-4xl mx-auto bg-white p-10 shadow-lg rounded-xl">
 
-        <h2 className="text-2xl font-semibold text-center mb-6 underline heading-primary">
+        <h2 className="text-3xl font-semibold text-center mb-8 heading-primary underline">
           Students <span className="text-accent">Enquiry</span>
         </h2>
 
-        {/* FORM START */}
-        <form onSubmit={onSubmit}>
+        <form onSubmit={onSubmit} className="space-y-6">
 
           {/* REQUIRED HIDDEN FIELDS */}
-          <input
-            type="hidden"
-            name="access_key"
-            value="5b2e5f7d-531f-46cb-8f70-804e36c770b5"
-          />
-          <input
-            type="hidden"
-            name="subject"
-            value="New Enquiry Submission"
-          />
-          <input
-            type="hidden"
-            name="from_name"
-            value="Drift Academy Enquiry Form"
-          />
+          <input type="hidden" name="subject" value="New Enquiry Submission" />
+          <input type="hidden" name="from_name" value="Drift Academy Enquiry Form" />
           <input type="hidden" name="botcheck" />
 
-          {/* Name */}
-          <div>
-            <label className="block mb-1 font-medium">Name*</label>
+          {/* 3 FIELD GROUP (Name, Father Name, Mobile) */}
+          <div className="space-y-4 md:grid md:grid-cols-3 md:gap-6 md:space-y-0">
             <input
               type="text"
               name="name"
@@ -64,46 +49,33 @@ export default function Enquiry() {
               className="w-full border rounded-md p-3"
               placeholder="Enter Name"
             />
-          </div>
 
-          {/* Father Name */}
-          <div>
-            <label className="block mb-1 font-medium">Father's Name*</label>
             <input
               type="text"
               name="father_name"
               required
               className="w-full border rounded-md p-3"
-              placeholder="Enter Father's Name"
+              placeholder="Father's Name"
             />
-          </div>
 
-          {/* Mobile */}
-          <div>
-            <label className="block mb-1 font-medium">Mobile_No*</label>
             <input
               type="text"
               name="mobile"
               required
               className="w-full border rounded-md p-3"
-              placeholder="Enter Mobile Number"
+              placeholder="Mobile Number"
             />
           </div>
 
-          {/* Email */}
-          <div>
-            <label className="block mb-1 font-medium">Email_id</label>
+          {/* EMAIL + COURSE */}
+          <div className="space-y-4 md:grid md:grid-cols-2 md:gap-6 md:space-y-0">
             <input
               type="email"
               name="email"
               className="w-full border rounded-md p-3"
-              placeholder="Enter Email"
+              placeholder="Email"
             />
-          </div>
 
-          {/* Course */}
-          <div>
-            <label className="block mb-1 font-medium">Course</label>
             <select name="course" className="w-full border rounded-md p-3">
               <option>Select Course</option>
               <option>JEE</option>
@@ -113,16 +85,15 @@ export default function Enquiry() {
             </select>
           </div>
 
-          <hr className="my-6" />
+          <hr className="border-gray-300" />
 
-          <h3 className="font-semibold text-lg text-gray-700 heading-primary">
-            Educational Background:
+          <h3 className="font-semibold text-xl text-gray-700">
+            Educational Background
           </h3>
 
-          {/* Class */}
-          <div>
-            <label className="block mb-1 font-medium">Class</label>
-            <select name="class" className="w-full border rounded-md p-3">
+          {/* EDUCATION SECTION */}
+          <div className="space-y-4 md:grid md:grid-cols-3 md:gap-6 md:space-y-0">
+            <select name="student_class" className="w-full border rounded-md p-3">
               <option>Select Class</option>
               <option>8th</option>
               <option>9th</option>
@@ -130,56 +101,50 @@ export default function Enquiry() {
               <option>11th</option>
               <option>12th</option>
             </select>
-          </div>
 
-          {/* Board */}
-          <div>
-            <label className="block mb-1 font-medium">Board</label>
-            <select name="board" className="w-full border rounded-md p-3">
+            <select name="board_type" className="w-full border rounded-md p-3">
               <option>Select Board</option>
               <option>CBSE</option>
               <option>ICSE</option>
               <option>UP Board</option>
               <option>Other</option>
             </select>
-          </div>
 
-          {/* Year of Passing */}
-          <div>
-            <label className="block mb-1 font-medium">Year of Passing</label>
             <input
               type="number"
-              name="year_of_passing"
+              name="passing_year"
               className="w-full border rounded-md p-3"
-              placeholder="Enter Year of Passing"
+              placeholder="Year of Passing"
             />
           </div>
 
-          {/* Enquiry */}
-          <div>
-            <label className="block mb-1 font-medium">Enquiry</label>
-            <textarea
-              rows="3"
-              name="enquiry"
-              className="w-full border rounded-md p-3"
-              placeholder="Write your enquiry..."
-            />
-          </div>
+          {/* MESSAGE FIELD */}
+          <textarea
+            rows="4"
+            name="enquiry_message"
+            className="w-full border rounded-md p-3"
+            placeholder="Write your enquiry..."
+          ></textarea>
 
-          {/* Submit */}
-          <div>
-            <button
-              type="submit"
-              className="bg-[#f6821c] text-white font-bold px-6 py-2 rounded shadow hover:bg-[#b25300] transition"
+          {/* SUBMIT BUTTON */}
+          <button
+            type="submit"
+            className="bg-[#f6821c] text-white w-full md:w-auto px-8 py-3 rounded-lg font-semibold hover:bg-[#b25300] transition"
+          >
+            Submit
+          </button>
+
+          {/* RESPONSE MESSAGE */}
+          {result && (
+            <p
+              className={`mt-2 text-sm font-medium ${
+                result.includes("Successfully") ? "text-green-700" : "text-red-600"
+              }`}
             >
-              Submit
-            </button>
-
-            <p className="mt-2 text-sm text-green-700">{result}</p>
-          </div>
+              {result}
+            </p>
+          )}
         </form>
-        {/* FORM END */}
-
       </div>
     </div>
   );
