@@ -16,18 +16,16 @@ export default function Footer() {
           </p>
           {/* Social Media Links */}
           <div className="flex gap-4 mt-5">
-            <a href="https://www.facebook.com/driftacademypvtltd/" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-yellow-400 transition text-lg">
+            <a href="https://www.facebook.com/driftacademypvtltd/" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-yellow-400 transition text-2xl">
               <FaFacebook />
             </a>
-            <a href="https://www.youtube.com/channel/UCD1TDTD8P9YF6MYVgsULY3w" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-yellow-400 transition text-lg">
+            <a href="https://www.youtube.com/channel/UCD1TDTD8P9YF6MYVgsULY3w" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-yellow-400 transition text-2xl">
               <FaYoutube />
             </a>
-            <a href="https://www.instagram.com/p/DPGTFjlD9kz/" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-yellow-400 transition text-lg">
+            <a href="https://www.instagram.com/drift_academy_pvt.ltd/" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-yellow-400 transition text-2xl">
               <FaInstagram />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-yellow-400 transition text-lg">
-              <FaLinkedin />
-            </a>
+            
           </div>
         </div>
 
@@ -50,11 +48,11 @@ export default function Footer() {
           <div className="space-y-3">
             <div className="flex items-center gap-3 text-white/80 text-sm">
               <FaMapMarkerAlt className="text-yellow-400 shrink-0" />
-              <p>K3 Plaza, Dodhpur Main Road, Kela Nagar, Aligarh</p>
+              <p>K3 Plaza, Third Floor, Dodhpur Main Road, Near Kela Nagar Chauraha, Aligarh</p>
             </div>
             <div className="flex items-center gap-3 text-white/80 text-sm">
               <FaPhone className="text-yellow-400 shrink-0" />
-              <a href="tel:+919876543210" className="hover:text-yellow-400 transition">+91 73006 66551</a>
+              <a href="tel:+9173006 66551" className="hover:text-yellow-400 transition">073006 66551</a>
             </div>
             <div className="flex items-center gap-3 text-white/80 text-sm">
               <FaEnvelope className="text-yellow-400 shrink-0" />

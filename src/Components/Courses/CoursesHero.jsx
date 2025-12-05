@@ -11,7 +11,7 @@ export default function CoursesHero() {
           <p className="text-gray-300 mb-8 text-base sm:text-lg">
             Expert-led coaching for JEE, NEET, AMU and foundation courses designed for success.
           </p>
-          <Link to="/enquiry">
+          <Link to="/contact">
           <button className="bg-[#f6821c] text-white font-semibold px-6 py-3 rounded-lg hover:bg-yellow-600 transition">
             Enroll Now
           </button>

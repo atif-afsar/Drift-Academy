@@ -10,24 +10,28 @@ export default function AboutHero() {
           </h1>
 
           <p className="text-base md:text-lg text-gray-300 max-w-md mx-auto md:mx-0">
-            DRIFT ACADEMY PVT LTD is an institute for NEET-JEE-AMU entrance exams. It is run by highly experienced mentors from different parts of our country
+            DRIFT ACADEMY PVT LTD is an institute for NEET-JEE-AMU entrance
+            exams. It is run by highly experienced mentors from different parts
+            of our country
           </p>
         </div>
 
         {/* RIGHT VIDEO */}
         <div className="w-full flex justify-center mt-4 md:justify-end">
-          <div className="w-full max-w-[400px] md:max-w-full aspect-video rounded-xl overflow-hidden shadow-xl border border-white/10">
-            <iframe
-              className="w-full h-full "
-              src="https://www.youtube.com/embed/t88fZ6u-cwM?si=_Txq5nhvhBEwZ18k"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            ></iframe>
-          </div>
+  <div className="w-full max-w-[400px] md:max-w-full aspect-video rounded-xl overflow-hidden shadow-xl border border-white/10">
+    
+          <iframe
+            className="w-full h-full object-cover"   
+            src="https://www.youtube.com/embed/1e7OG1yEciE?autoplay=1&mute=1&controls=0&loop=1&playlist=1e7OG1yEciE"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+          ></iframe>
+
         </div>
+      </div>
       </div>
     </section>
   );

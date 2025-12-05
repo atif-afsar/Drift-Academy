@@ -18,7 +18,7 @@ export default function CTASection() {
 
         {/* CTA Button */}
         <Link
-          to="/enquiry"
+          to="/contact"
           className="mt-6 inline-block bg-[#f6821c] text-white font-bold 
                      px-8 py-3 rounded-lg text-lg hover:bg-yellow-600 transition"
         >

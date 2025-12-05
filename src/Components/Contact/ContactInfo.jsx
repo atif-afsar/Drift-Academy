@@ -1,4 +1,10 @@
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaInstagram, FaFacebook } from "react-icons/fa";
+import {
+  FaPhoneAlt,
+  FaEnvelope,
+  FaMapMarkerAlt,
+  FaInstagram,
+  FaFacebook,
+} from "react-icons/fa";
 
 export default function ContactInfo() {
   return (
@@ -7,7 +13,7 @@ export default function ContactInfo() {
 
       <div className="space-y-4 text-gray-700">
         <p className="flex items-center gap-3">
-          <FaPhoneAlt className="text-yellow-500" /> +91 123 456 7890
+          <FaPhoneAlt className="text-yellow-500" /> 073006 66551
         </p>
 
         <p className="flex items-center gap-3">
@@ -15,16 +21,33 @@ export default function ContactInfo() {
         </p>
 
         <p className="flex items-center gap-3">
-          <FaMapMarkerAlt className="text-yellow-500" /> 
-          K3 Plaza, Dodhpur Main Road,  
-          Kela Nagar, Aligarh, UP, India
+          <FaMapMarkerAlt className="text-yellow-500" />
+          K3 Plaza, Third Floor, Dodhpur Main Road,
+          <br /> Near Kela Nagar Chauraha, Aligarh
         </p>
       </div>
 
       <h3 className="font-semibold mt-6 mb-2">Follow Us</h3>
-      <div className="flex gap-4 text-2xl text-gray-700">
-        <FaInstagram />
-        <FaFacebook />
+      <div className="flex items-center gap-5 text-2xl">
+        <a
+          href="https://www.instagram.com/drift_academy_pvt.ltd/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-black/70 hover:text-yellow-500 transition-colors duration-300"
+        >
+          <FaInstagram />
+        </a>
+
+        <a
+          href="https://www.facebook.com/driftacademypvtltd/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-black/70 hover:text-yellow-500 transition-colors duration-300"
+        >
+          <FaFacebook />
+        </a>
+        
+        
       </div>
     </div>
   );
