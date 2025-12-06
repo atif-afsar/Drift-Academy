@@ -28,11 +28,11 @@ export default function ResultsHero() {
         </div>
 
         {/* RIGHT SIDE IMAGE */}
-        <div className="w-full">
+        <div className="w-full lg:mt-8 rounded-2xl overflow-hidden shadow-lg border">
           <img
             src="/images/image.png" 
             alt="Students Celebrating"
-            className="w-full lg:w-[700px] sm:pt-6 rounded-xl object-cover shadow-md"
+            className="w-full h-auto object-cover"
           />
         </div>
 
