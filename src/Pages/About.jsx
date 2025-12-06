@@ -5,6 +5,7 @@ import AboutWhyChoose from '../Components/About/AboutWhyChoose'
 import AboutFaculty from '../Components/About/AboutFaculty'
 import AboutTeaching from '../Components/About/AboutTeaching'
 import AboutCTA from '../Components/About/AboutCTA'
+import DriftCycleSection from '../Components/About/DriftCycleSection'
 // import Reveal from './Reveal'
 
 const About = () => {
@@ -21,6 +22,9 @@ const About = () => {
       
      
          <AboutFaculty />
+
+
+         <DriftCycleSection />
       
     
          <AboutTeaching />
