@@ -1,52 +1,51 @@
-import StudentCard from "./StudentCard";
+import React from "react";
+import Marquee from "react-fast-marquee";
 
-export default function StudentStories() {
-  const students = [
-    {
-      img: "/student1.jpg",
-      name: "Priya Sharma",
-      rank: "AIR 12",
-      story: "I improved my concepts and achieved my dream college...",
-    },
-    {
-      img: "/student2.jpg",
-      name: "Rohan Verma",
-      rank: "AIR 47",
-      story: "The mentors at Drift Academy guided me throughout...",
-    },
-    {
-      img: "/student3.jpg",
-      name: "Anjali Singh",
-      rank: "AIR 29",
-      story: "Teachers gave me the confidence and perfect strategy...",
-    },
-    {
-      img: "/student4.jpg",
-      name: "Vikram Yadav",
-      rank: "AIR 78",
-      story: "The test series and doubt support helped me improve...",
-    },
+export default function SuccessStories() {
+  const banners = [
+    { id: 1, img: "/public/results/HANIYA YOUNUS neetug 9-min.jpg" },
+    { id: 2, img: "/public/results/KRATIKA neetug 8-min.jpg" },
+    { id: 3, img: "/public/results/LIAYBA NASEEM neetug 12-min.jpg" },
+    { id: 4, img: "/public/results/MD SHAHAB ARIF neetug 15-min.jpg" },
+    { id: 5, img: "/public/results/Mohd Fahmeed neetug 6-min.jpg" },
+    { id: 6, img: "/public/results/MOHD. FIROZ neetug 20-min.jpg" },
+    { id: 7, img: "/public/results/MOHD. KASHIF neetug 10-min.jpg" },
+    { id: 8, img: "/public/results/MOHD. KUMAIL neetug 14-min.jpg" },
+
   ];
 
+  // Duplicate for seamless infinite scroll
+  const loopImages = [...banners];
+
   return (
-    <section className="w-full py-16 bg-white overflow-hidden">
-      <div className="max-w-6xl mx-auto px-6">
+    <section className="w-full bg-white py-16">
+      <div className="max-w-7xl mx-auto px-6">
         
-        <h2 className="text-3xl font-bold mb-8 heading-primary">What Our Students <span className="text-accent">Say</span></h2>
+        {/* Heading */}
+        <h2 className="text-3xl text-center mb-10 md:text-4xl font-bold heading-primary">
+          Our <span className="text-accent">Success Stories</span>
+        </h2>
 
-        {/* MARQUEE CONTAINER */}
-        <div className="relative w-full overflow-hidden">
-          
-          {/* Marquee Track */}
-          <div className="flex gap-3 sm:gap-6 animate-marquee">
-            {[...students, ...students].map((s, i) => (
-              <div key={i} className="min-w-[150px] sm:min-w-60">
-                <StudentCard {...s} />
-              </div>
-            ))}
-          </div>
-
-        </div>
+        {/* Marquee Banner Slider */}
+        <Marquee speed={40} gradient={false} pauseOnHover={true}>
+          {loopImages.map((item, index) => (
+            <div key={index} className="mx-4">
+              <img
+                src={item.img}
+                alt="student result"
+                className="
+                  w-[280px] 
+                  md:w-[350px] 
+                  lg:w-[420px]
+                  h-auto 
+                  rounded-xl 
+                  shadow-lg 
+                  object-cover
+                "
+              />
+            </div>
+          ))}
+        </Marquee>
       </div>
     </section>
   );
