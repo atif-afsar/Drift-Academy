@@ -56,6 +56,7 @@ export default function Navbar() {
             <li><Link to="/about" onClick={closeMenu} className="block py-2">About</Link></li>
             <li><Link to="/courses" onClick={closeMenu} className="block py-2">Courses</Link></li>
             <li><Link to="/results" onClick={closeMenu} className="block py-2">Results</Link></li>
+            <li><Link to="/enquiry" onClick={closeMenu} className="block py-2">Enquiry</Link></li>
             <li><Link to="/contact" onClick={closeMenu} className="block py-2">Contact</Link></li>
           </ul>
 
