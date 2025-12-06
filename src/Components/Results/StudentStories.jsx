@@ -3,14 +3,14 @@ import Marquee from "react-fast-marquee";
 
 export default function SuccessStories() {
   const banners = [
-    { id: 1, img: "/public/results/HANIYA YOUNUS neetug 9-min.jpg" },
-    { id: 2, img: "/public/results/KRATIKA neetug 8-min.jpg" },
-    { id: 3, img: "/public/results/LIAYBA NASEEM neetug 12-min.jpg" },
-    { id: 4, img: "/public/results/MD SHAHAB ARIF neetug 15-min.jpg" },
-    { id: 5, img: "/public/results/Mohd Fahmeed neetug 6-min.jpg" },
-    { id: 6, img: "/public/results/MOHD. FIROZ neetug 20-min.jpg" },
-    { id: 7, img: "/public/results/MOHD. KASHIF neetug 10-min.jpg" },
-    { id: 8, img: "/public/results/MOHD. KUMAIL neetug 14-min.jpg" },
+    { id: 1, img: "/results/HANIYA YOUNUS neetug 9-min.jpg" },
+    { id: 2, img: "/results/KRATIKA neetug 8-min.jpg" },
+    { id: 3, img: "/results/LIAYBA NASEEM neetug 12-min.jpg" },
+    { id: 4, img: "/results/MD SHAHAB ARIF neetug 15-min.jpg" },
+    { id: 5, img: "/results/Mohd Fahmeed neetug 6-min.jpg" },
+    { id: 6, img: "/results/MOHD. FIROZ neetug 20-min.jpg" },
+    { id: 7, img: "/results/MOHD. KASHIF neetug 10-min.jpg" },
+    { id: 8, img: "/results/MOHD. KUMAIL neetug 14-min.jpg" },
 
   ];
 
