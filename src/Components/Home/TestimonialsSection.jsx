@@ -1,73 +1,48 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
 
-export default function TestimonialsSection() {
-  const testimonials = [
-    {
-      id: 1,
-      name: "Rohan Sharma",
-      college: "IIT Bombay",
-      text: "The faculty at Drift Academy is incredible. Their personalized approach helped me crack the JEE exam and get into my dream college.",
-      img: "https://via.placeholder.com/80" 
-    },
-    {
-      id: 2,
-      name: "Priya Singh",
-      college: "AIIMS Delhi",
-      text: "Thanks to the rigorous test series and doubt-clearing sessions, I was able to score exceptionally well in NEET. Highly recommended!",
-      img: "https://via.placeholder.com/80"
-    },
-    {
-      id: 3,
-      name: "Ankit Kumar",
-      college: "NTSE Scholar",
-      text: "The foundation course was a game-changer for me. It built a strong base that is still helping me in my higher studies.",
-      img: "https://via.placeholder.com/80"
-    },
-    {
-      id: 4,
-      name: "Sneha Verma",
-      college: "JEE Topper",
-      text: "The study material and consistent mentorship boosted my confidence. Drift Academy shaped my success journey.",
-      img: "https://via.placeholder.com/80"
-    },
+export default function SuccessStories() {
+  const banners = [
+    { id: 1, img: "/results/ABDUL MALIK neetug 16-min.jpg" },
+    { id: 2, img: "/public/results/ABDUL MUQTADIR neetug 13-min.jpg" },
+    { id: 3, img: "/public/results/AFREEN UROOJ neetug 19-min.jpg" },
+    { id: 4, img: "/public/results/AKBAR USMANI  neetug 5-min.jpg" },
+    { id: 5, img: "/public/results/ALTAMASH KHAN neetug 4-min.jpg" },
+
   ];
 
-  // Duplicate testimonials for seamless marquee
-  const duplicatedTestimonials = [...testimonials, ...testimonials];
+  // Duplicate for seamless infinite scroll
+  const loopImages = [...banners];
 
   return (
     <section className="w-full bg-white py-16">
       <div className="max-w-7xl mx-auto px-6">
+        
         {/* Heading */}
-        <h2 className="text-3xl text-center mb-6 md:text-4xl font-bold heading-primary">
-          Success Stories From Our <span className="text-accent">Student</span>
+        <h2 className="text-3xl text-center mb-10 md:text-4xl font-bold heading-primary">
+          Our <span className="text-accent">Success Stories</span>
         </h2>
 
-        {/* Marquee Slider */}
-        <div className="w-full overflow-hidden">
-          <Marquee pauseOnHover={true} speed={30} gradient={false} className="py-4">
-            {duplicatedTestimonials.map((item, index) => (
-              <div
-                key={`${item.id}-${index}`}
-                className="min-w-[320px] max-w-[350px] bg-white border border-gray-200 rounded-xl shadow-sm p-6 flex flex-col items-center text-center mx-4"
-              >
-                <img
-                  src={item.img}
-                  alt={item.name}
-                  className="w-20 h-20 rounded-full object-cover mb-3"
-                />
-
-                <p className="text-gray-700 italic text-sm leading-relaxed">
-                  "{item.text}"
-                </p>
-
-                <h4 className="mt-4 font-semibold text-gray-900 heading-primary">{item.name}</h4>
-                <p className="text-zinc-800 text-sm font-medium">{item.college}</p>
-              </div>
-            ))}
-          </Marquee>
-        </div>
+        {/* Marquee Banner Slider */}
+        <Marquee speed={40} gradient={false} pauseOnHover={true}>
+          {loopImages.map((item, index) => (
+            <div key={index} className="mx-4">
+              <img
+                src={item.img}
+                alt="student result"
+                className="
+                  w-[280px] 
+                  md:w-[350px] 
+                  lg:w-[420px]
+                  h-auto 
+                  rounded-xl 
+                  shadow-lg 
+                  object-cover
+                "
+              />
+            </div>
+          ))}
+        </Marquee>
       </div>
     </section>
   );
