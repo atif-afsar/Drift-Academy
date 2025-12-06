@@ -24,7 +24,7 @@ export default function DriftCycleSection() {
 
         {/* RIGHT — Image */}
         <div className="flex justify-center">
-          <div className="w-full md:w-[90%] lg:w-[80%] rounded-2xl overflow-hidden shadow-xl border">
+          <div className="w-full md:w-[90%] lg:w-[70%] rounded-2xl overflow-hidden shadow-xl border">
             <img
               src="about-img/image.png"
               alt="Drift Cycle Banner"
