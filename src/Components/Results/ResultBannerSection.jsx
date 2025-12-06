@@ -7,7 +7,7 @@ export default function AmuResultSection() {
         <div>
           <div className="w-full rounded-2xl overflow-hidden shadow-lg border ">
             <img
-              src="/public/results/amu.jpg"
+              src="/results/amu.jpg"
               alt="AMU Entrance Results"
               className="w-full h-auto object-cover"
             />
