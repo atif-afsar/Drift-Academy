@@ -32,7 +32,7 @@ export default function ContactHero() {
         {/* RIGHT IMAGE */}
         <div className="flex justify-center">
           <img
-            src="/public/images/contact.png" // change to your own image
+            src="/images/contact.png" // change to your own image
             alt="students discussing"
             className="w-full max-w-md rounded-xl shadow-lg object-cover"
           />
