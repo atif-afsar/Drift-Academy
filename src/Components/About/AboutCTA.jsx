@@ -12,7 +12,7 @@ export default function ResultsCTA() {
         <p className="text-gray-700 max-w-2xl mx-auto mb-6">
           Join thousands of students who trusted Drift Academy to achieve their dreams.
         </p>
-        <Link to="/enquiry">
+        <Link to="/contact">
         <button className="bg-[#f6821c] text-white px-8 py-3 rounded-lg text-lg font-semibold">
           Explore Our Programs
         </button>

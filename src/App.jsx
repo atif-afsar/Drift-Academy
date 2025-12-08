@@ -6,7 +6,6 @@ import About from "./Pages/About";
 import Courses from "./Pages/Courses";
 import Result from "./Pages/Result";
 import Contact from "./Pages/Contact";
-import Enquiry from "./Pages/Enquiry";
 import Loader from "./Components/Loader";
 import SmoothScroll from "./Pages/SmoothScroll";
 import Footer from "./Components/Home/Footer";
@@ -34,7 +33,6 @@ const App = () => {
             <Route path="/about" element={<About />} />
             <Route path="/courses" element={<Courses />} />
             <Route path="/results" element={<Result />} />
-            <Route path="/enquiry" element={<Enquiry />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/contact/enquiry" element={<EnquiryForm />} />
           </Routes>

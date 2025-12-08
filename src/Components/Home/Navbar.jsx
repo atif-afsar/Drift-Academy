@@ -27,7 +27,6 @@ export default function Navbar() {
           <li><Link to="/about" className="hover:text-blue-700 transition">About</Link></li>
           <li><Link to="/courses" className="hover:text-blue-700 transition">Courses</Link></li>
           <li><Link to="/results" className="hover:text-blue-700 transition">Results</Link></li>
-          <li><Link to="/enquiry" className="hover:text-blue-700 transition">Enquiry</Link></li>
           <li><Link to="/contact" className="hover:text-blue-700 transition">Contact</Link></li>
         </ul>
 
@@ -56,7 +55,6 @@ export default function Navbar() {
             <li><Link to="/about" onClick={closeMenu} className="block py-2">About</Link></li>
             <li><Link to="/courses" onClick={closeMenu} className="block py-2">Courses</Link></li>
             <li><Link to="/results" onClick={closeMenu} className="block py-2">Results</Link></li>
-            <li><Link to="/enquiry" onClick={closeMenu} className="block py-2">Enquiry</Link></li>
             <li><Link to="/contact" onClick={closeMenu} className="block py-2">Contact</Link></li>
           </ul>
 
