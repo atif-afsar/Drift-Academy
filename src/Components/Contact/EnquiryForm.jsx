@@ -29,7 +29,7 @@ export default function EnquiryForm() {
 
   return (
     <div className="bg-white p-6 rounded-lg shadow-md">
-      <h2 className="text-xl font-semibold mb-4">Contact Us Form</h2>
+      <h2 className="text-3xl font-semibold m-6 ">Contact Us Form</h2>
 
       <form onSubmit={onSubmit}>
         {/* REQUIRED HIDDEN FIELDS */}

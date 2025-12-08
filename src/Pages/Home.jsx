@@ -22,21 +22,12 @@ const Home = () => {
 
     
         <AdvantageSection />
-     
-
-    
         <TestimonialsSection />
-
         <Directors />
-
-     
-
-    
         <CTASection />
 
      
 
-      <Footer />
     </div>
   )
 }
