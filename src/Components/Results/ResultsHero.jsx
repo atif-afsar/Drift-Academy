@@ -30,7 +30,7 @@ export default function ResultsHero() {
         {/* RIGHT SIDE IMAGE */}
         <div className="w-full lg:mt-8 rounded-2xl overflow-hidden shadow-lg border">
           <img
-            src="/images/image.png" 
+            src="/images/result.png" 
             alt="Students Celebrating"
             className="w-full h-auto object-cover"
           />

@@ -1,7 +1,16 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 export default function ContactHero() {
+
+  const handleReadNow = () => {
+    const blogsSection = document.querySelector('[data-blogs-grid]')
+    if (blogsSection) {
+      blogsSection.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    } else {
+      window.scrollTo({ top: window.scrollY + 800, behavior: 'smooth' })
+    }
+  }
+  
   return (
     <section className="w-full bg-[#0A1A66] text-white py-30">
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 px-6 items-center">
@@ -24,15 +33,16 @@ export default function ContactHero() {
             Reach out to us — we are here to guide you toward JEE, NEET, and AMU success.
           </p>
 
-         <button  className="bg-[#f6821c] text-white px-6 py-3 font-semibold rounded-lg shadow-sm hover:bg-yellow-600">
-             <Link to="/contact/enquiry">Read More</Link>
+         <button onClick={handleReadNow} className="bg-[#f6821c] text-white px-6 py-3 font-semibold rounded-lg shadow-sm hover:bg-yellow-600">
+          
+            Read More
             </button>
         </div>
 
         {/* RIGHT IMAGE */}
         <div className="flex justify-center">
           <img
-            src="/images/contact.png" // change to your own image
+            src="/images/contact1.png" // change to your own image
             alt="students discussing"
             className="w-full max-w-md rounded-xl shadow-lg object-cover"
           />

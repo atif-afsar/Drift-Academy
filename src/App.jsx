@@ -9,7 +9,8 @@ import Contact from "./Pages/Contact";
 import Loader from "./Components/Loader";
 import SmoothScroll from "./Pages/SmoothScroll";
 import Footer from "./Components/Home/Footer";
-import EnquiryForm from "./Components/Contact/EnquiryForm";
+import Blogs from "./Pages/Blogs";
+import Blog from "./Pages/Blog";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -34,7 +35,8 @@ const App = () => {
             <Route path="/courses" element={<Courses />} />
             <Route path="/results" element={<Result />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/contact/enquiry" element={<EnquiryForm />} />
+            <Route path="/blogs" element={<Blogs />} />
+            <Route path="/blog/:id" element={<Blog />} />
           </Routes>
       <Footer />
 
