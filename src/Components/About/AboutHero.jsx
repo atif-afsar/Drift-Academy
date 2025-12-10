@@ -3,7 +3,7 @@ export default function AboutHero() {
     <section className="w-full bg-[#0A1A66] text-white py-16 md:py-24">
       <div className="max-w-6xl mx-auto px-4 md:px-6 grid md:grid-cols-2 gap-12 items-center">
         {/* LEFT TEXT */}
-        <div className="text-center md:text-left px-2 md:px-0">
+        <div className="text-left md:text-left px-2 md:px-0">
           <h1 className="text-3xl md:text-5xl font-bold mb-4 mt-8 leading-snug md:leading-tight">
             Founded by Mentors, <br className="md:hidden" />
             Focused on <span className="text-[#f6821c]">Students</span>
