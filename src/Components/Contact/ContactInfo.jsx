@@ -17,7 +17,7 @@ export default function ContactInfo() {
         </p>
 
         <p className="flex items-center gap-3">
-          <FaEnvelope className="text-yellow-500" /> info@driftacademy.com
+          <FaEnvelope className="text-yellow-500" /> driftpvt.ltd@gmail.com
         </p>
 
         <p className="flex items-center gap-3">
