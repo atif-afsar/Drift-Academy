@@ -23,12 +23,12 @@ const BlogCard = ({ id, image, tag, title, description, }) => {
         </div>
 
         {/* Title */}
-        <h3 className="text-lg font-bold text-white mb-3 line-clamp-2 flex-grow">
+        <h3 className="text-lg font-bold text-white mb-3 line-clamp-2">
           {title}
         </h3>
 
         {/* Description */}
-        <p className="text-gray-400 text-sm mb-4 line-clamp-2 flex-grow">
+        <p className="text-gray-400 text-sm mb-4 line-clamp-2 ">
           {description}
         </p>
 

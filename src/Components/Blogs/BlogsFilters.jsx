@@ -18,7 +18,8 @@ const BlogsFilters = ({ onFilterChange, onSearchChange }) => {
   }
 
   return (
-    <div className="w-full bg-[#0a0a0a] py-8 px-4 sm:px-6 lg:px-8">
+    <div className="w-full bg-[#0a0a0a] py-8 px-4 sm:px-6 l
+    g:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Search Bar */}
         <div className="flex items-center gap-3 bg-[#1a1a1a] rounded-lg px-4 py-3 mb-6 border border-gray-700">
