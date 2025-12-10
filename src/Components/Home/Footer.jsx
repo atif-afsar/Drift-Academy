@@ -56,7 +56,7 @@ export default function Footer() {
             </div>
             <div className="flex items-center gap-3 text-white/80 text-sm">
               <FaEnvelope className="text-yellow-400 shrink-0" />
-              <a href="mailto:info@driftacademy.in" className="hover:text-yellow-400 transition">info@driftacademy.in</a>
+              <a href="mailto:info@driftacademy.in" className="hover:text-yellow-400 transition">driftpvt.ltd@gmail.com</a>
             </div>
           </div>
         </div>
