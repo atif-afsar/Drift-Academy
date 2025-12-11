@@ -1,18 +1,20 @@
+import { motion } from "framer-motion";
+
 const reasons = [
   {
     icon: "📘",
     title: "Expert Faculty",
-    desc: "Learn from experienced educators who are masters in their fields."
+    desc: "Learn from experienced educators who are masters in their fields.",
   },
   {
     icon: "👨‍🏫",
     title: "Personalized Mentorship",
-    desc: "Receive guidance tailored to your learning needs."
+    desc: "Receive guidance tailored to your learning needs.",
   },
   {
     icon: "🏆",
     title: "Proven Track Record",
-    desc: "Join a legacy of success with top ranks in competitive exams."
+    desc: "Join a legacy of success with top ranks in competitive exams.",
   },
 ];
 
@@ -21,18 +23,56 @@ export default function CoursesWhyChoose() {
     <section className="py-20 bg-gray-50">
       <div className="max-w-6xl mx-auto px-6 text-center">
 
-        <h2 className="text-3xl font-bold mb-4 heading-primary">Why Choose Drift <span className="text-accent">Academy</span></h2>
-        <p className="text-gray-600 max-w-3xl mx-auto mb-12">
-          We provide the best learning environment and resources to help our students succeed.
-        </p>
+        {/* Heading Animation */}
+        <motion.h2
+          className="text-3xl font-bold mb-4 heading-primary"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
+          Why Choose Drift <span className="text-accent">Academy</span>
+        </motion.h2>
 
+        <motion.p
+          className="text-gray-600 max-w-3xl mx-auto mb-12"
+          initial={{ opacity: 0, y: 15 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          viewport={{ once: true }}
+        >
+          We provide the best learning environment and resources to help our students succeed.
+        </motion.p>
+
+        {/* Cards */}
         <div className="grid md:grid-cols-3 gap-8">
           {reasons.map((item, i) => (
-            <div key={i} className="bg-white border border-gray-200 rounded-xl p-8 shadow-sm">
-              <div className="text-4xl mb-4">{item.icon}</div>
-              <h3 className="text-xl font-semibold mb-2 heading-primary">{item.title}</h3>
+            <motion.div
+              key={i}
+              className="bg-white border border-gray-200 rounded-xl p-8 shadow-sm hover:shadow-xl transition"
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: i * 0.2, ease: "easeOut" }}
+              whileHover={{ scale: 1.04 }}
+            >
+              {/* Icon Animation */}
+              <motion.div
+                className="text-4xl mb-4"
+                initial={{ scale: 0.5, opacity: 0 }}
+                whileInView={{ scale: 1, opacity: 1 }}
+                transition={{ delay: i * 0.2 + 0.1, duration: 0.5 }}
+                viewport={{ once: true }}
+              >
+                {item.icon}
+              </motion.div>
+
+              <h3 className="text-xl font-semibold mb-2 heading-primary">
+                {item.title}
+              </h3>
+
               <p className="text-gray-600">{item.desc}</p>
-            </div>
+            </motion.div>
           ))}
         </div>
 
