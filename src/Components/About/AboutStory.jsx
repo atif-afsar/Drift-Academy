@@ -54,7 +54,7 @@ export default function AboutStory() {
           <motion.img
             whileHover={{ scale: 1.03 }}
             transition={{ duration: 0.3 }}
-            src="https://driftacademy.in/images/grp.jpg"
+            src="/about-img/team.png"
             alt="our team"
             className="rounded-2xl w-full shadow-lg"
           />
