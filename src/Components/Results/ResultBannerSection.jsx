@@ -1,21 +1,39 @@
+import { motion } from "framer-motion";
+
 export default function AmuResultSection() {
   return (
-    <section className="w-full py-16 bg-white">
+    <motion.section
+      className="w-full py-16 bg-white"
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.2 }}
+      transition={{ duration: 0.7, ease: "easeOut" }}
+    >
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
 
         {/* LEFT — Result Banner Image */}
-        <div>
-          <div className="w-full rounded-2xl overflow-hidden shadow-lg border ">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7, ease: "easeOut" }}
+        >
+          <div className="w-full rounded-2xl overflow-hidden shadow-lg border">
             <img
               src="/results/amu.jpg"
               alt="AMU Entrance Results"
               className="w-full h-auto object-cover"
             />
           </div>
-        </div>
+        </motion.div>
 
         {/* RIGHT — Appreciation Text */}
-        <div>
+        <motion.div
+          initial={{ opacity: 0, x: 40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+        >
           <h2 className="text-3xl md:text-4xl font-bold leading-tight heading-primary">
             Genuine Results of <span className="text-accent">AMU XI Entrance</span>
           </h2>
@@ -36,11 +54,17 @@ export default function AmuResultSection() {
             ✔ Consistent Performance Every Year  
           </p>
 
-           <button  className="bg-[#f6821c] text-white px-6 py-3 mt-3 font-semibold rounded-lg shadow-sm hover:bg-yellow-600">
-             <a href="https://www.youtube.com/@driftacademypvtltd/featured">Read More</a>
-            </button>
-        </div>
+          <motion.button
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.4, duration: 0.5, ease: "easeOut" }}
+            className="bg-[#f6821c] text-white px-6 py-3 mt-3 font-semibold rounded-lg shadow-sm hover:bg-yellow-600"
+          >
+            <a href="https://www.youtube.com/@driftacademypvtltd/featured">Read More</a>
+          </motion.button>
+        </motion.div>
       </div>
-    </section>
+    </motion.section>
   );
 }

@@ -5,17 +5,16 @@ import { Link } from "react-router-dom";
 export default function Navbar() {
   const [open, setOpen] = useState(false);
 
-  // Function to close menu on click
   const closeMenu = () => setOpen(false);
 
   return (
     <nav className="w-full bg-white shadow-sm fixed top-0 left-0 z-50">
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        
+
         {/* Logo */}
         <div className="flex items-center gap-2">
-          <img 
-            src="/images/logo.jpeg" 
+          <img
+            src="/images/logo.jpeg"
             alt="Drift Academy Logo"
             className="h-13 w-auto"
           />
@@ -29,10 +28,9 @@ export default function Navbar() {
           <li><Link to="/results" className="hover:text-blue-700 transition">Results</Link></li>
           <li><Link to="/contact" className="hover:text-blue-700 transition">Contact</Link></li>
           <li><Link to="/blogs" className="hover:text-blue-700 transition">Blogs</Link></li>
-
         </ul>
 
-        {/* Contact Button */}
+        {/* Desktop Button */}
         <Link
           to="/contact"
           className="hidden md:block bg-[#f6821c] px-5 py-2 rounded-lg text-xl font-semibold text-white hover:bg-yellow-500 transition"
@@ -60,12 +58,14 @@ export default function Navbar() {
             <li><Link to="/contact" onClick={closeMenu} className="block py-2">Contact</Link></li>
             <li><Link to="/blogs" onClick={closeMenu} className="block py-2">Blogs</Link></li>
           </ul>
+
+          {/* Mobile Button (fixed text color) */}
           <Link
             to="/contact"
             onClick={closeMenu}
-            className="mt-4 inline-block bg-[#f6821c] w-full text-center py-2 rounded-lg font-semibold text-gray-900 hover:bg-yellow-500 transition"
+            className="mt-4 inline-block bg-[#f6821c] w-full text-center py-2 rounded-lg font-semibold text-white hover:bg-yellow-500 transition"
           >
-            Enroll Now
+            ENROLL NOW
           </Link>
         </div>
       )}
