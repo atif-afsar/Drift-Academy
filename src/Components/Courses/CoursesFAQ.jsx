@@ -2,11 +2,35 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const faqData = [
-  { q: "Who are the instructors?", a: "Our instructors are industry experts with years of teaching experience." },
-  { q: "What is the typical class schedule?", a: "Classes follow a structured weekly timetable with flexibility for students." },
-  { q: "Is there a scholarship program available?", a: "Yes, we offer scholarships based on merit and financial need." },
-  { q: "How are student doubts resolved?", a: "Students get one-on-one doubt clearing sessions every week." },
+  { q: "Who are the instructors?", a: "Our instructors are highly qualified teachers and industry experts with years of practical and teaching experience." },
+
+  { q: "What is the typical class schedule?", a: "Classes follow a structured weekly timetable, and students can access recorded sessions anytime." },
+
+  { q: "Is there a scholarship program available?", a: "Yes, we offer scholarships based on merit, academic performance, and financial background." },
+
+  { q: "How are student doubts resolved?", a: "Students get access to one-on-one doubt-solving sessions, live chats, and dedicated doubt-clearing hours." },
+
+  // ⭐ NEW FAQS BELOW
+
+  { q: "Do you provide study materials?", a: "Yes, students receive digital notes, chapter summaries, formula sheets, and practice questions after every lesson." },
+
+  { q: "Are classes available online or offline?", a: "We offer both online and offline learning options based on student preference and convenience." },
+
+  { q: "Do students get homework and assignments?", a: "Yes, every chapter includes assignments, worksheets, and quizzes to reinforce learning." },
+
+  { q: "Do you prepare students for board exams?", a: "Absolutely! We provide class-wise preparation plans, sample papers, revision tests, and exam-focused strategies." },
+
+  { q: "How can parents track student progress?", a: "Parents receive monthly progress reports, test results, attendance history, and personalized feedback from teachers." },
+
+  { q: "Are revision classes provided before exams?", a: "Yes, we conduct intensive revision sessions, mock tests, and doubt marathons before every major exam." },
+
+  { q: "What is the maximum batch size?", a: "To ensure effective learning, we keep our batches small—usually between 20 to 30 students." },
+
+  { q: "Do you provide career guidance?", a: "Yes, we guide students on subject selection, career options, competitive exams, and future planning." },
+
+  { q: "Can students switch batches?", a: "Yes, students may change batches depending on availability and performance assessment." }
 ];
+
 
 export default function CoursesFAQ() {
   const [open, setOpen] = useState(null);
