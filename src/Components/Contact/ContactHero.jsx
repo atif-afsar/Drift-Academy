@@ -77,7 +77,7 @@ export default function ContactHero() {
               visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } }
             }}
           >
-            Read More
+           Contact Now
           </motion.button>
         </motion.div>
 
