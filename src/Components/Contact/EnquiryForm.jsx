@@ -8,8 +8,6 @@ export default function EnquiryForm() {
     setResult("Sending...");
 
     const formData = new FormData(event.target);
-
-    // Append access key ONCE
     formData.append("access_key", "5b2e5f7d-531f-46cb-8f70-804e36c770b5");
 
     const response = await fetch("https://api.web3forms.com/submit", {
@@ -28,95 +26,108 @@ export default function EnquiryForm() {
   };
 
   return (
-    <div className="bg-white p-6 rounded-lg shadow-md">
-      <h2 className="text-3xl font-semibold m-6 ">Contact Us Form</h2>
+    <div className="w-full flex justify-center py-10 px-4">
+      <div className="bg-white w-full max-w-4xl p-10 rounded-2xl shadow-xl border border-gray-200">
 
-      <form onSubmit={onSubmit}>
-        {/* REQUIRED HIDDEN FIELDS */}
-        <input type="hidden" name="subject" value="New Enquiry Submission" />
-        <input type="hidden" name="from_name" value="Drift Academy Enquiry Form" />
-        <input type="hidden" name="botcheck" />
+        {/* Heading */}
+        <h2 className="text-4xl font-bold mb-8 text-gray-800 text-center">
+          Contact Us
+        </h2>
 
-        {/* 2 Column Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <input
-            type="text"
-            name="name"
-            placeholder="Enter your name"
-            required
-            className="border rounded-md p-3 w-full"
-          />
+        <form onSubmit={onSubmit} className="space-y-6">
+          
+          {/* Hidden Required Fields */}
+          <input type="hidden" name="subject" value="New Enquiry Submission" />
+          <input type="hidden" name="from_name" value="Drift Academy Enquiry Form" />
+          <input type="hidden" name="botcheck" />
 
-          <input
-            type="text"
-            name="parent_name"
-            placeholder="Enter parent's name"
-            required
-            className="border rounded-md p-3 w-full"
-          />
+          {/* Grid Section */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
-          <input
-            type="text"
-            name="contact"
-            placeholder="Enter your contact number"
-            required
-            className="border rounded-md p-3 w-full"
-          />
+            <input
+              type="text"
+              name="name"
+              placeholder="Student's Name"
+              required
+              className="form-input"
+            />
 
-          <input
-            type="email"
-            name="email"
-            placeholder="Enter your email address"
-            className="border rounded-md p-3 w-full"
-          />
+            <input
+              type="text"
+              name="parent_name"
+              placeholder="Parent's Name"
+              required
+              className="form-input"
+            />
 
-          <select name="course" className="border rounded-md p-3 w-full" required>
-            <option value="">Select a course</option>
-            <option>Class 9</option>
-            <option>Class 10</option>
-            <option>Class 11</option>
-            <option>Class 12</option>
-          </select>
+            <input
+              type="text"
+              name="contact"
+              placeholder="Contact Number"
+              required
+              className="form-input"
+            />
 
-          <input
-            type="text"
-            name="education"
-            placeholder="e.g., 12th CBSE"
-            className="border rounded-md p-3 w-full"
-          />
-        </div>
+            <input
+              type="email"
+              name="email"
+              placeholder="Email Address"
+              className="form-input"
+            />
 
-        {/* Message Box */}
-        <textarea
-          rows="4"
-          name="message"
-          placeholder="Write your message here..."
-          className="border rounded-md p-3 w-full mt-3"
-        ></textarea>
+            <select
+              name="course"
+              required
+              className="form-input"
+            >
+              <option value="">Select Course</option>
+              <option>Class 9</option>
+              <option>Class 10</option>
+              <option>Class 11</option>
+              <option>Class 12</option>
+            </select>
 
-        {/* Submit Button */}
-        <button
-          type="submit"
-          className="bg-[#f6821c] text-white hover:bg-yellow-600 transition px-6 py-3 rounded-lg font-semibold mt-3"
-        >
-          Submit
-        </button>
+            <input
+              type="text"
+              name="education"
+              placeholder="e.g., 12th CBSE"
+              className="form-input"
+            />
+          </div>
 
-        {/* Response Message */}
-        {result && (
-          <p
-            className={`mt-3 font-medium ${
-              result.includes("Successfully") ? "text-green-600" : "text-red-600"
-            }`}
+          {/* Message Box */}
+          <textarea
+            name="message"
+            rows="4"
+            placeholder="Your message..."
+            className="form-input"
+          ></textarea>
+
+          {/* Submit Button */}
+          <button
+            type="submit"
+            className="bg-[#f6821c] w-full md:w-auto text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-[#d96f14] transition"
           >
-            {result}
-          </p>
-        )}
+            Submit
+          </button>
 
-        <p className="text-xs text-gray-500 mt-2">
-          We respect your privacy. Your information is safe with us.
-        </p>
-      </form>
+          {/* Response Message */}
+          {result && (
+            <p
+              className={`mt-2 font-medium text-center ${
+                result.includes("Successfully") ? "text-green-600" : "text-red-600"
+              }`}
+            >
+              {result}
+            </p>
+          )}
+
+          <p className="text-xs text-gray-500 text-center pt-2">
+            We respect your privacy. Your information is safe with us.
+          </p>
+
+        </form>
+      </div>
     </div>
   );
 }

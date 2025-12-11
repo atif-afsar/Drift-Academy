@@ -77,3 +77,11 @@ body {
 /* Background helpers */
 .bg-primary { background-color: var(--color-primary); }
 .bg-accent { background-color: var(--color-accent); }
+
+@layer components {
+  .form-input {
+    @apply border border-gray-300 rounded-lg p-3 w-full 
+           focus:outline-none focus:ring-2 focus:ring-[#f6821c]
+           text-gray-700 placeholder-gray-400 transition;
+  }
+}

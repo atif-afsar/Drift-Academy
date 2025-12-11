@@ -6,6 +6,7 @@ import TestimonialsSection from '../Components/Home/TestimonialsSection'
 import CTASection from '../Components/Home/CTASection'
 import Footer from '../Components/Home/Footer'
 import Directors from '../Components/Home/Directors'
+import HomeBlogPreview from '../Components/Home/HomeBlogPreview'
 // import Reveal from './Reveal'
 
 const Home = () => {
@@ -13,17 +14,11 @@ const Home = () => {
      <div>
    
      <Hero />
-    
-      
-
-    
         <ProgramsSection />
-     
-
-    
         <AdvantageSection />
         <TestimonialsSection />
         <Directors />
+        <HomeBlogPreview />
         <CTASection />
 
      
