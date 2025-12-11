@@ -78,7 +78,7 @@ export default function Footer() {
           </h3>
 
           <ul className="space-y-2 text-white/80 text-sm">
-            {["Home", "Courses", "About Us", "Results", "Enquiry", "Contact"].map((item, index) => (
+            {["Home", "Courses", "About", "Results", "Enquiry", "Contact"].map((item, index) => (
               <li key={index}>
                 <Link to={`/${item === "Home" ? "" : item.toLowerCase().replace(" ", "")}`}
                   className="hover:text-yellow-400 transition"

@@ -11,6 +11,7 @@ import SmoothScroll from "./Pages/SmoothScroll";
 import Footer from "./Components/Home/Footer";
 import Blogs from "./Pages/Blogs";
 import Blog from "./Pages/Blog";
+import ScrollToTop from "./Components/ScrollToTop";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -23,6 +24,7 @@ const App = () => {
   return (
     <Router>
       <SmoothScroll />
+      <ScrollToTop />
 
       {loading ? (
         <Loader setLoading={setLoading} />
