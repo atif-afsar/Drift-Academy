@@ -5,25 +5,25 @@ const faculty = [
   { 
     name: "Azim Sir", 
     role: "Biology", 
-    image: "https://driftacademy.in/images/azim.jpg", 
+    image: "/about-img/azim.png", 
     des: "BIOLOGY is the study of life, its just not remembering the fact but connecting the dots logically" 
   },
   { 
     name: "Nadeem Sir", 
     role: "Physics", 
-    image: "https://driftacademy.in/images/nadeem.jpg", 
+    image: "/about-img/nadeem.png", 
     des: "Learning PHYSICS for NEET-JEE is all about creating equations using physical laws and then solving those equations using basic MATHS." 
   },
   { 
     name: "Kush Sir", 
     role: "Mathematics", 
-    image: "https://driftacademy.in/images/kushh.jpg", 
+    image: "/about-img/kushh.png", 
     des: "MATHS is the language in which every SCIENCE is qualified. LEARN it to apply." 
   },
   { 
     name: "Sohaib Sir", 
     role: "Chemistry", 
-    image: "https://driftacademy.in/images/sohaib.jpg", 
+    image: "/about-img/Shoib.png", 
     des: "CHEMISTRY is the science, sometimes with EXPECTATION but that too is another EXPLAINABLE science." 
   },
 ];
