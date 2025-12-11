@@ -88,7 +88,7 @@ export default function CoursesList() {
               </ul>
 
               {/* Button */}
-              <Link to="/enquiry">
+              <Link to="/contact">
                 <motion.button
                   className="bg-[#f6821c] text-white font-semibold px-6 py-3 rounded-lg hover:bg-yellow-600 transition w-full text-center"
                   whileHover={{ scale: 1.05 }}
