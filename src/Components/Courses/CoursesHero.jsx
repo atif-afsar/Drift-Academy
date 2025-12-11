@@ -56,7 +56,7 @@ export default function CoursesHero() {
           transition={{ duration: 1, ease: "easeOut" }}
         >
           <motion.img
-            src="https://driftacademy.in/images/course.jpg"
+            src="/images/courses.png"
             alt="students-learning"
             className="w-full max-w-md pt-2 sm:max-w-lg md:max-w-full rounded-xl h-64 sm:h-80 md:h-[420px] lg:h-[500px] object-cover shadow-lg"
             whileHover={{ scale: 1.03 }}
