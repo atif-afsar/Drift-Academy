@@ -3,28 +3,29 @@ import ProgramCard from "./ProgramCard";
 
 export default function ProgramsSection() {
   const programs = [
-    {
-      image: "/images/jee.jpg",
-      title: "JEE Preparation",
-      subtitle: "Classes 11–12",
-      description:
-        "Advanced coaching tailored for engineering aspirants with expert mentors and structured modules.",
-    },
-    {
-      image: "/images/neet.jpg",
-      title: "NEET Preparation",
-      subtitle: "Classes 11–12",
-      description:
-        "Comprehensive medical entrance training with weekly tests, doubt sessions, and personalized evaluation.",
-    },
-    {
-      image: "/images/amu.jpg",
-      title: "AMU Entrance",
-      subtitle: "Classes 9–12",
-      description:
-        "Specialized preparation for AMU entrance with exam-focused notes, practice sheets, and mock tests.",
-    },
-  ];
+  {
+    image: "/images/jee.jpg",
+    title: "JEE Preparation",
+    subtitle: "Classes 11–12",
+    description:
+      "Build a solid foundation for engineering with guided learning, smart strategies, and mentors who simplify even the toughest concepts.",
+  },
+  {
+    image: "/images/neet.jpg",
+    title: "NEET Preparation",
+    subtitle: "Classes 11–12",
+    description:
+      "Master the NEET journey with clear explanations, regular practice, and personal support designed to boost both confidence and scores.",
+  },
+  {
+    image: "/images/amu.jpg",
+    title: "AMU Entrance",
+    subtitle: "Classes 9–12",
+    description:
+      "Prepare for AMU the right way with focused study material, targeted exercises, and mock tests that mirror the real exam experience.",
+  },
+];
+
 
   return (
     <section className="max-w-7xl mx-auto px-4 md:px-8 py-20">
