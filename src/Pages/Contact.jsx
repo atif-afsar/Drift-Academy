@@ -28,7 +28,7 @@ const Contact = () => {
         property="og:description"
         content="Reach out to Drift Academy for admissions, course guidance, and support. Fill out our enquiry form or visit our location for assistance."
       />
-      <Meta property="og:image" content="https://drift-academy.vercel.app/og-contact.png" />
+      <Meta property="og:image" content="/images/contact1.png" />
       <Meta property="og:url" content="https://drift-academy.vercel.app/contact" />
       <Meta property="og:type" content="website" />
 
@@ -39,7 +39,7 @@ const Contact = () => {
         name="twitter:description"
         content="Have questions? We're here to help. Contact Drift Academy for admissions, course details, and support."
       />
-      <Meta name="twitter:image" content="https://drift-academy.vercel.app/og-contact.png" />
+      <Meta name="twitter:image" content="/images/contact1.png" />
 
       {/* --------------------- PAGE CONTENT --------------------- */}
       <ContactHero />

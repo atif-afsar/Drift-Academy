@@ -28,7 +28,7 @@ const Courses = () => {
         property="og:description"
         content="Discover Drift Academy’s expert-designed courses that help students excel through strong fundamentals, personalized learning, and concept clarity."
       />
-      <Meta property="og:image" content="https://drift-academy.vercel.app/og-courses.png" />
+      <Meta property="og:image" content="/images/courses.png" />
       <Meta property="og:url" content="https://drift-academy.vercel.app/courses" />
       <Meta property="og:type" content="website" />
 
@@ -39,7 +39,7 @@ const Courses = () => {
         name="twitter:description"
         content="Structured programs, expert faculty, strong fundamentals, and consistent academic growth — explore our courses now."
       />
-      <Meta name="twitter:image" content="https://drift-academy.vercel.app/og-courses.png" />
+      <Meta name="twitter:image" content="/images/courses.png" />
 
       {/* --------------------- PAGE CONTENT --------------------- */}
       <CoursesHero />

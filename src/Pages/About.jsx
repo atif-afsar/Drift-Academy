@@ -31,7 +31,7 @@ const About = () => {
         property="og:description"
         content="Discover Drift Academy’s mission-driven teaching approach, expert faculty, and commitment to student growth and excellence."
       />
-      <Meta property="og:image" content="/public/about-img/team.png" />
+      <Meta property="og:image" content="/about-img/team.png" />
       <Meta property="og:url" content="https://drift-academy.vercel.app/about" />
       <Meta property="og:type" content="website" />
 
@@ -42,7 +42,7 @@ const About = () => {
         name="twitter:description"
         content="Drift Academy focuses on structured learning, strong fundamentals, expert faculty, and a mission to guide students toward academic success."
       />
-      <Meta name="twitter:image" content="/public/about-img/team.png" />
+      <Meta name="twitter:image" content="/about-img/team.png" />
 
       {/* --------------------- PAGE CONTENT --------------------- */}
       <AboutHero />

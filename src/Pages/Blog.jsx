@@ -26,7 +26,7 @@ const Blog = () => {
             {/* OpenGraph */}
             <Meta property="og:title" content={title || "Drift Academy Blog"} />
             <Meta property="og:description" content={description || "Explore educational insights and learning tips."} />
-            <Meta property="og:image" content={image || "https://drift-academy.vercel.app/og-blog.png"} />
+            <Meta property="og:image" content={image || "/images/jee.jpg"} />
             <Meta property="og:url" content={url || "https://drift-academy.vercel.app"} />
             <Meta property="og:type" content="article" />
 
@@ -34,7 +34,7 @@ const Blog = () => {
             <Meta name="twitter:card" content="summary_large_image" />
             <Meta name="twitter:title" content={title || "Drift Academy Blog"} />
             <Meta name="twitter:description" content={description || "Educational insights and learning strategies."} />
-            <Meta name="twitter:image" content={image || "https://drift-academy.vercel.app/og-blog.png"} />
+            <Meta name="twitter:image" content={image || "/images/jee.jpg"} />
           </>
         )}
       />

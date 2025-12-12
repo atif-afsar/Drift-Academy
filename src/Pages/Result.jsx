@@ -30,7 +30,7 @@ const Result = () => {
         property="og:description"
         content="Discover inspiring student success stories, performance statistics, and topper achievements that highlight Drift Academy's commitment to academic excellence."
       />
-      <Meta property="og:image" content="https://drift-academy.vercel.app/og-results.png" />
+      <Meta property="og:image" content="/images/results.png" />
       <Meta property="og:url" content="https://drift-academy.vercel.app/results" />
       <Meta property="og:type" content="website" />
 
@@ -41,7 +41,7 @@ const Result = () => {
         name="twitter:description"
         content="Real improvement. Real success. Explore Drift Academy's student progress, achievements, and transformation stories."
       />
-      <Meta name="twitter:image" content="https://drift-academy.vercel.app/og-results.png" />
+      <Meta name="twitter:image" content="/images/results.png" />
 
       {/* --------------------- PAGE CONTENT --------------------- */}
       <ResultsHero />
