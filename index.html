@@ -2,40 +2,86 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/images/logo.jpeg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/images/logo.jpeg" type="image/jpeg" />
 
-     <!-- Primary SEO Meta Tags -->
-    <title>Drift Academy — Smarter Learning for Students | Concept + Practice + Revision</title>
+    <!-- Mobile Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Primary SEO Meta Tags -->
+    <title>Drift Academy | Best Coaching for Concept Learning, Practice & Revision</title>
     <meta
       name="description"
-      content="Drift Academy helps students learn smarter with concept-based lessons, practice questions, revision cycles, toppers' strategies, and exam-oriented notes."
+      content="Drift Academy offers concept-based learning, intensive practice, structured revision cycles, expert mentorship, and toppers' strategies to help students score higher with confidence."
     />
     <meta
       name="keywords"
-      content="Drift Academy, online learning, exam preparation, coaching, study platform, concept learning, revision cycle, drift cycle, CBSE, boards, competitive exams"
+      content="Drift Academy, best coaching institute, study platform, tuition classes, concept learning, practice questions, revision cycle, drift cycle, student improvement, CBSE, maths tuition, science tuition, exam preparation"
     />
 
-    <!-- Mobile Responsive -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Canonical URL (prevents duplicate indexing) -->
+    <link rel="canonical" href="https://drift-academy.vercel.app/" />
 
-    <!-- Open Graph for Social Media -->
+    <!-- Robots: Let Google index everything -->
+    <meta name="robots" content="index, follow" />
+
+    <!-- Theme Color for Mobile Browsers -->
+    <meta name="theme-color" content="#0A0A0A" />
+
+    <!-- Open Graph (Facebook, WhatsApp, LinkedIn) -->
     <meta property="og:title" content="Drift Academy — Learn Smarter, Score Higher" />
     <meta
       property="og:description"
-      content="Learn with the Drift Cycle — a proven method to build strong concepts, improve problem-solving, and stay exam-ready."
+      content="Master concepts, build problem-solving skills, and stay exam-ready with Drift Academy’s proven learning cycle."
     />
-    <meta property="og:image" content="/images/drift-banner.png" />
+    <meta
+      property="og:image"
+      content="https://drift-academy.vercel.app/images/drift-banner.png"
+    />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://your-domain.com/" />
+    <meta property="og:url" content="https://drift-academy.vercel.app/" />
+    <meta property="og:site_name" content="Drift Academy" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Drift Academy — Smarter Learning" />
-    <meta name="twitter:description" content="Concepts → Practice → Revision. The Drift Academy learning cycle." />
-    <meta name="twitter:image" content="/images/drift-banner.png" />
+    <meta
+      name="twitter:description"
+      content="Concepts → Practice → Revision. The Drift Academy learning cycle."
+    />
+    <meta
+      name="twitter:image"
+      content="https://drift-academy.vercel.app/images/drift-banner.png"
+    />
+    <meta name="twitter:site" content="@driftacademy" />
 
+    <!-- Performance Optimizations -->
+    <meta http-equiv="x-dns-prefetch-control" content="on" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+
+    <!-- Schema.org: Local Business (Massively helps brand ranking) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "EducationalOrganization",
+        "name": "Drift Academy",
+        "url": "https://drift-academy.vercel.app/",
+        "logo": "https://drift-academy.vercel.app/images/logo.jpeg",
+        "description": "Drift Academy provides structured learning programs with concepts, practice, revision, expert mentorship, and student improvement cycles.",
+        "sameAs": [
+          "https://instagram.com/driftacademy",
+          "https://facebook.com/driftacademy",
+          "https://youtube.com/@driftacademy"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "IN"
+        }
+      }
+    </script>
   </head>
+
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
