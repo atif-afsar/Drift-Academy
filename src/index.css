@@ -85,3 +85,12 @@ body {
            text-gray-700 placeholder-gray-400 transition;
   }
 }
+/* Add this to your global CSS */
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0); }
+}
+.floating {
+  animation: float 2.5s ease-in-out infinite;
+}

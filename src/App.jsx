@@ -13,6 +13,7 @@ import Blogs from "./Pages/Blogs";
 import Blog from "./Pages/Blog";
 import ScrollToTop from "./Components/ScrollToTop";
 import { HeadProvider } from "react-head";
+import WhatsAppButton from "./Components/WhatsAppButton";
 
 
 const App = () => {
@@ -43,6 +44,7 @@ const App = () => {
             <Route path="/blogs" element={<Blogs />} />
             <Route path="/blog/:id" element={<Blog />} />
           </Routes>
+           <WhatsAppButton />
       <Footer />
 
         </>
