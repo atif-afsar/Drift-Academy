@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const BlogCard = ({ id, image, tag, title, description, }) => {
   return (
-    <div className="bg-[#1a1a1a] rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300 h-full flex flex-col">
+    <div className="bg-[#0A2540] rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300 h-full flex flex-col">
       {/* Image Container */}
       <div className="relative h-48 bg-gray-700 overflow-hidden group">
         <img 

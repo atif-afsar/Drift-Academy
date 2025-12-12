@@ -960,7 +960,7 @@ const BlogDetail = () => {
   }
 
   return (
-    <article className="w-full bg-[#0a0a0a] text-white">
+    <article className="w-full bg-[#0A2540]  text-white">
       {/* Hero Image */}
       <div className="w-full h-96 overflow-hidden">
         <img

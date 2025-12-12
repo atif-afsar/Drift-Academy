@@ -11,7 +11,7 @@ const HeroBlog = () => {
   }
 
   return (
-    <section className="w-full bg-gradient-to-b from-[#0a0a0a] to-[#1a1a1a] py-12 md:py-20 px-4 sm:px-6 lg:px-8 mt-20">
+    <section className="w-full bg-gradient-to-b from-[#0A2540] to-[#1a1a1a] py-12 md:py-20 px-4 sm:px-6 lg:px-8 mt-20">
       <div className="max-w-7xl mx-auto">
         {/* Hero Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 items-center">
