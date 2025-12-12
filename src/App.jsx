@@ -12,6 +12,8 @@ import Footer from "./Components/Home/Footer";
 import Blogs from "./Pages/Blogs";
 import Blog from "./Pages/Blog";
 import ScrollToTop from "./Components/ScrollToTop";
+import { HeadProvider } from "react-head";
+
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -22,6 +24,7 @@ const App = () => {
   }, []);
 
   return (
+      <HeadProvider>
     <Router>
       <SmoothScroll />
       <ScrollToTop />
@@ -45,6 +48,7 @@ const App = () => {
         </>
       )}
     </Router>
+    </HeadProvider>
   );
 };
 
