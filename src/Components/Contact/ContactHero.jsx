@@ -64,8 +64,8 @@ export default function ContactHero() {
               visible: { opacity: 1, x: 0, transition: { duration: 0.5 } }
             }}
           >
-            At Drift Academy, we believe that every student's journey starts with a single conversation.
-            Reach out to us — we are here to guide you toward JEE, NEET, and AMU success.
+           At Drift Academy, we believe the right guidance at the right time can change everything.
+           Connect with us today, and let us help your child move confidently toward JEE, NEET, and AMU goals.
           </motion.p>
 
           {/* Button */}

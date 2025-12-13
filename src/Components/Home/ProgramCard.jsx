@@ -13,14 +13,14 @@ export default function ProgramCard({ image, title, subtitle, description }) {
     >
       {/* Image */}
       <motion.div
-        className="w-full h-40 rounded-lg overflow-hidden"
+        className="w-full h-44 rounded-lg overflow-hidden"
         whileHover={{ scale: 1.02 }}
         transition={{ duration: 0.4 }}
       >
         <motion.img
           src={image}
           alt={title}
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover object-top "
           whileHover={{ scale: 1.1 }}
           transition={{ duration: 0.6 }}
         />

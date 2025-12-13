@@ -28,8 +28,7 @@ export default function ResultsHero() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.3, duration: 0.6 }}
           >
-            Discover how Drift Academy has empowered students to achieve their dream
-            admissions and secure top ranks through dedication and expert guidance.
+           Discover how Drift Academy has helped students turn their dreams into reality—earning top ranks and securing admissions through hard work and expert guidance.
           </motion.p>
 
           {/* BUTTONS WITH STAGGER */}

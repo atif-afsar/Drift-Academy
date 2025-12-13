@@ -30,7 +30,7 @@ export default function AboutStory() {
             viewport={{ once: true }}
             className="text-gray-600 leading-relaxed mb-4"
           >
-            Drift Academy was founded with a vision to guide students towards top-tier entrance exams such as NEET, JEE, and AMU. Our mission is to provide high-quality coaching that equips learners with strong concepts, disciplined study strategies, and the confidence required to succeed in competitive examinations.
+           Drift Academy was born from a simple belief: every student deserves the right guidance to achieve big dreams. We help learners prepare for competitive exams like NEET, JEE, and AMU by building strong fundamentals, smart study habits, and the confidence needed to face exams fearlessly. Our focus isn’t just on teaching—it’s on shaping focused, motivated, and successful students.
           </motion.p>
 
           <motion.p
@@ -40,7 +40,7 @@ export default function AboutStory() {
             viewport={{ once: true }}
             className="text-gray-600 leading-relaxed"
           >
-            We are led by highly experienced mentors from different parts of the country, bringing diverse expertise and proven teaching methodologies. At Drift Academy, we believe in personalized guidance, structured learning plans, and consistent practice—ensuring every student reaches their full academic potential.
+            Our team is guided by experienced mentors from across the country, each bringing unique insights and years of proven teaching experience. At Drift Academy, we don’t believe in one-size-fits-all learning. Every student receives personal attention, a clear study plan, and continuous practice—so they can grow with confidence and reach their true academic potential.
           </motion.p>
         </motion.div>
 

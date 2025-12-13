@@ -44,9 +44,8 @@ const App = () => {
             <Route path="/blogs" element={<Blogs />} />
             <Route path="/blog/:id" element={<Blog />} />
           </Routes>
-           <WhatsAppButton />
-      <Footer />
-
+         <WhatsAppButton />
+         <Footer />
         </>
       )}
     </Router>

@@ -4,21 +4,21 @@ import ProgramCard from "./ProgramCard";
 export default function ProgramsSection() {
   const programs = [
   {
-    image: "/images/jee.jpg",
+    image: "/images/jee1.png",
     title: "JEE Preparation",
     subtitle: "Classes 11–12",
     description:
       "Build a solid foundation for engineering with guided learning, smart strategies, and mentors who simplify even the toughest concepts.",
   },
   {
-    image: "/images/neet.jpg",
+    image: "/images/neet1.png",
     title: "NEET Preparation",
     subtitle: "Classes 11–12",
     description:
       "Master the NEET journey with clear explanations, regular practice, and personal support designed to boost both confidence and scores.",
   },
   {
-    image: "/images/amu.jpg",
+    image: "/images/amu1.png",
     title: "AMU Entrance",
     subtitle: "Classes 9–12",
     description:
