@@ -90,6 +90,8 @@ export default function Footer() {
           </ul>
         </motion.div>
 
+        
+
         {/* CONTACT INFO */}
         <motion.div
           variants={{
@@ -125,6 +127,7 @@ export default function Footer() {
         </motion.div>
 
       </motion.div>
+      
 
       {/* BOTTOM BAR */}
       <motion.div

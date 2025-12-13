@@ -4,7 +4,9 @@ import { Title, Meta } from "react-head";
 import ContactHero from "../Components/Contact/ContactHero";
 import ContactInfo from "../Components/Contact/ContactInfo";
 import EnquiryForm from "../Components/Contact/EnquiryForm";
-import ContactMap from "../Components/Contact/ContactMap";
+import { lazy, Suspense } from "react";
+
+const ContactMap = lazy(() => import("../Components/Contact/ContactMap"));
 
 const Contact = () => {
   return (
@@ -23,18 +25,27 @@ const Contact = () => {
       />
 
       {/* OpenGraph Tags */}
-      <Meta property="og:title" content="Contact Drift Academy — We're Here to Help" />
+      <Meta
+        property="og:title"
+        content="Contact Drift Academy — We're Here to Help"
+      />
       <Meta
         property="og:description"
         content="Reach out to Drift Academy for admissions, course guidance, and support. Fill out our enquiry form or visit our location for assistance."
       />
       <Meta property="og:image" content="/images/contact1.png" />
-      <Meta property="og:url" content="https://drift-academy.vercel.app/contact" />
+      <Meta
+        property="og:url"
+        content="https://drift-academy.vercel.app/contact"
+      />
       <Meta property="og:type" content="website" />
 
       {/* Twitter Tags */}
       <Meta name="twitter:card" content="summary_large_image" />
-      <Meta name="twitter:title" content="Contact Drift Academy — Let's Connect" />
+      <Meta
+        name="twitter:title"
+        content="Contact Drift Academy — Let's Connect"
+      />
       <Meta
         name="twitter:description"
         content="Have questions? We're here to help. Contact Drift Academy for admissions, course details, and support."
@@ -45,7 +56,16 @@ const Contact = () => {
       <ContactHero />
       <EnquiryForm />
       <ContactInfo />
-      <ContactMap />
+
+      <Suspense
+        fallback={
+          <div className="h-[400px] flex items-center justify-center bg-gray-100 text-gray-500 text-sm">
+            Loading map...
+          </div>
+        }
+      >
+        <ContactMap />
+      </Suspense>
     </div>
   );
 };

@@ -71,7 +71,7 @@ export default function Hero() {
             >
               ENROLL NOW
             </Link>
-            <a href="tel:+9107300666551" className="ml-4 inline-block bg-white hover:bg-[#f6821c] text-[#f6821c] hover:text-white font-semibold text-sm sm:text-lg md:text-xl px-6 py-3 sm:px-8 sm:py-3 rounded-lg shadow-lg transition-all duration-300">
+            <a href="tel:+917300666551" className="ml-4 inline-block bg-white hover:bg-[#f6821c] text-[#f6821c] hover:text-white font-semibold text-sm sm:text-lg md:text-xl px-6 py-3 sm:px-8 sm:py-3 rounded-lg shadow-lg transition-all duration-300">
               Call Now
             </a>
           </div>
