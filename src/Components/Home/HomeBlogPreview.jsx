@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 const blogs = [
   {
     id: 1,
-    image: "/images/hero.jpg",
+    image: "/blogs/Neet - 4.png",
     tag: "Exam Tips",
     title: "Decoding the Latest Exam Pattern",
     author: "Dr. Ramesh Kumar",
@@ -11,7 +11,7 @@ const blogs = [
   },
   {
     id: 2,
-  image: '/images/neet.jpg',
+  image: '/blogs/Neet - 5.png',
   tag: 'Motivation',
   title: 'How to Stay Motivated During Tough Study Sessions',
   author: 'Ms. Priya Sharma',
@@ -20,7 +20,7 @@ const blogs = [
   },
      {
     id: 3,
-  image: '/images/jee.jpg',
+  image: '/blogs/Neet - 6.png',
   tag: 'Study Hacks',
   title: 'Revision Made Easy with Time Management',
   author: 'Mr. Vikram Singh',

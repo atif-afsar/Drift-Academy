@@ -18,7 +18,7 @@ const HeroBlog = () => {
           {/* Left - Image */}
           <div className="relative h-64 md:h-96 rounded-lg overflow-hidden shadow-xl">
             <img 
-              src="/images/jee.jpg"
+              src="/blogs/Neet - 4.png"
               alt="Master Your Board Exams"
               className="w-full h-full object-cover"
             />

@@ -4,51 +4,44 @@ import { motion } from "framer-motion";
 export default function ProgramCard({ image, title, subtitle, description }) {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 40 }}
+      initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.3 }}
-      transition={{ duration: 0.6, ease: "easeOut" }}
-      whileHover={{ scale: 1.03 }}
-      className="bg-white rounded-xl shadow-md hover:shadow-xl transition p-5 flex flex-col cursor-pointer"
+      viewport={{ once: true }}
+      transition={{ duration: 0.4, ease: "easeOut" }}
+      whileHover={{ y: -4 }}
+      className="group bg-white rounded-2xl border border-gray-200 hover:border-gray-300 shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden flex flex-col"
     >
-      {/* Image */}
-      <motion.div
-        className="w-full h-44 rounded-lg overflow-hidden"
-        whileHover={{ scale: 1.02 }}
-        transition={{ duration: 0.4 }}
-      >
-        <motion.img
+      {/* IMAGE */}
+      <div className="w-full aspect-[4/3] bg-[#F7F8FA] flex items-center justify-center">
+        <img
           src={image}
           alt={title}
-          className="w-full h-full object-cover object-top "
-          whileHover={{ scale: 1.1 }}
-          transition={{ duration: 0.6 }}
+          className="max-w-[90%] max-h-[90%] object-contain transition-transform duration-500 group-hover:scale-[1.03]"
         />
-      </motion.div>
+      </div>
 
-      {/* Text */}
-      <motion.h3
-        className="mt-4 text-xl font-semibold text-gray-900 heading-primary"
-        whileHover={{ x: 4 }}
-        transition={{ duration: 0.3 }}
-      >
-        {title}
-      </motion.h3>
+      {/* CONTENT */}
+      <div className="p-6 flex flex-col flex-grow">
+        <h3 className="text-lg font-semibold text-gray-900 tracking-tight">
+          {title}
+        </h3>
 
-      <p className="text-sm text-gray-500">{subtitle}</p>
+        <p className="text-sm text-accent font-medium mt-1">
+          {subtitle}
+        </p>
 
-      <p className="mt-3 text-gray-700 text-sm leading-relaxed">
-        {description}
-      </p>
+        <p className="mt-3 text-sm text-gray-600 leading-relaxed flex-grow">
+          {description}
+        </p>
 
-      <motion.a
-        href="https://www.youtube.com/@driftacademypvtltd/videos"
-        className="mt-4 text-zinc-700 font-semibold hover:underline inline-block"
-        whileHover={{ x: 3 }}
-        transition={{ duration: 0.3 }}
-      >
-        Learn More →
-      </motion.a>
+        {/* CTA */}
+        <span className="mt-5 inline-flex items-center text-sm font-medium text-gray-900">
+          Learn More
+          <span className="ml-1 transition-transform duration-300 group-hover:translate-x-1">
+            →
+          </span>
+        </span>
+      </div>
     </motion.div>
   );
 }
