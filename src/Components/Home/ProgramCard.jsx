@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 export default function ProgramCard({ image, title, subtitle, description }) {
   return (
@@ -35,12 +36,14 @@ export default function ProgramCard({ image, title, subtitle, description }) {
         </p>
 
         {/* CTA */}
-        <span className="mt-5 inline-flex items-center text-sm font-medium text-gray-900">
+        <Link to={"https://www.youtube.com/results?search_query=drift+academy+aligarh"}>
+        <span className="mt-5 inline-flex items-center text-sm font-medium text-gray-900 hover:text-accent group-hover:underline color-">
           Learn More
           <span className="ml-1 transition-transform duration-300 group-hover:translate-x-1">
             →
           </span>
         </span>
+        </Link>
       </div>
     </motion.div>
   );

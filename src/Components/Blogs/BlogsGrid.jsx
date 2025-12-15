@@ -8,35 +8,35 @@ const BlogsGrid = ({ filter, searchQuery }) => {
   const allBlogs = [
     {
       id: 1,
-      image: '/images/hero.jpg',
+      image: '/blogs/Neet - 5.png',
       tag: 'Exam Tips',
       title: 'Decoding the Latest Exam Pattern',
       description: 'Stay updated with the most recent exam pattern changes and learn how to strategize your preparation accordingly.'
     },
     {
       id: 2,
-      image: '/images/neet.jpg',
+      image: '/blogs/Neet - 6.png',
       tag: 'Motivation',
       title: 'How to Stay Motivated During Tough Study Sessions',
       description: 'Discover proven strategies to keep your motivation high and maintain consistent performance throughout your preparation journey.'
     },
     {
       id: 3,
-      image: '/images/jee.jpg',
+      image: '/hero-img/Neet - 2.png',
       tag: 'Study Hacks',
       title: 'Revision Made Easy with Time Management',
       description: 'Master the art of revision through effective time management techniques and proven study methods for maximum retention.'
     },
     {
       id: 4,
-      image: '/images/amu.jpg',
+      image: '/hero-img/Neet - 3.png',
       tag: 'Success Stories',
       title: 'From Zero to Hero: Student Success Stories',
       description: 'Read inspiring tales of students who turned their dreams into reality with dedication and smart preparation strategies.'
     },
     {
       id: 5,
-      image: '/images/hero1.png',
+      image: '/blogs/blog8.png',
       tag: 'Exam Tips',
       title: 'Quick Revision Hacks for Students',
       description: 'Learn the best time management and revision techniques to ace your exams without last-minute stress.'
@@ -50,42 +50,42 @@ const BlogsGrid = ({ filter, searchQuery }) => {
     },
     {
       id: 7,
-      image: '/images/hero.jpg',
+      image: '/blogs/blog7.png',
       tag: 'Motivation',
       title: 'Overcoming Anxiety Before Exams',
       description: 'Master practical techniques to manage exam anxiety and build confidence for better performance on test day.'
     },
     {
       id: 8,
-      image: '/images/neet.jpg',
+      image: '/blogs/blog8.png',
       tag: 'Success Stories',
       title: 'Top Scorers Share Their Secrets',
       description: 'Get insights from top performers on their study strategies, discipline, and the mindset that led them to success.'
     },
     {
       id: 9,
-      image: '/images/jee.jpg',
+      image: '/images/hero1.png',
       tag: 'Study Hacks',
       title: 'Active Learning Techniques That Work',
       description: 'Discover scientifically-proven learning methods including spaced repetition, active recall, and interleaving for better results.'
     },
     {
       id: 10,
-      image: '/images/hero.jpg',
+      image: '/blogs/Neet - 6.png',
       tag: 'Exam Tips',
       title: 'Understanding Question Paper Weightage',
       description: 'Learn how to analyze question paper patterns and focus your preparation on high-weightage topics for maximum scores.'
     },
     {
       id: 11,
-      image: '/images/neet.jpg',
+      image: '/blogs/Neet - 5.png',
       tag: 'Study Hacks',
       title: 'Creating an Effective Study Schedule',
       description: 'Discover how to balance multiple subjects, maintain consistency, and build a study schedule that actually works.'
     },
     {
       id: 12,
-      image: '/images/jee.jpg',
+      image: '/blogs/blog9.png',
       tag: 'Motivation',
       title: 'Building Confidence During Preparation',
       description: 'Strategies to overcome self-doubt and build unshakeable confidence for your final exams.'

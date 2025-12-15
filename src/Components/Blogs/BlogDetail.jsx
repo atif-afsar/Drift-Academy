@@ -7,7 +7,7 @@ const BlogDetail = () => {
 
   const blogContent = {
     1: {
-  image: '/images/jee.jpg',
+  image: '/blogs/Neet - 4.png',
   tag: 'Exam Tips',
   title: 'Decoding the Latest Exam Pattern',
   author: 'Dr. Ramesh Kumar',
@@ -86,7 +86,7 @@ const BlogDetail = () => {
 },
 
     2: {
-  image: '/images/neet.jpg',
+  image: '/blogs/Neet - 5.png',
   tag: 'Motivation',
   title: 'How to Stay Motivated During Tough Study Sessions',
   author: 'Ms. Priya Sharma',
@@ -165,7 +165,7 @@ const BlogDetail = () => {
 },
 
     3: {
-  image: '/images/jee.jpg',
+  image: '/blogs/Neet - 6.png',
   tag: 'Study Hacks',
   title: 'Revision Made Easy with Time Management',
   author: 'Mr. Vikram Singh',
@@ -244,7 +244,7 @@ const BlogDetail = () => {
 },
 
     4: {
-  image: '/images/amu.jpg',
+  image: '/blogs/Neet - 6.png',
   tag: 'Success Stories',
   title: 'From Zero to Hero: Student Success Stories',
   author: 'Editorial Team',
@@ -438,7 +438,7 @@ const BlogDetail = () => {
 },
 
     6:{
-  image: '/images/result.png',
+  image: '/blogs/Neet - 4.png',
   tag: 'Study Hacks',
   title: 'Digital Tools That Make Studying Easier',
   author: 'Coach Riya Sharma',
@@ -504,7 +504,7 @@ const BlogDetail = () => {
   ]
 },
 7:{
-  image: '/images/hero.jpg',
+  image: '/blogs/Neet - 5.png',
   tag: 'Motivation',
   title: 'Overcoming Anxiety Before Exams',
   author: 'Dr. Meera Kulkarni',
@@ -570,7 +570,7 @@ const BlogDetail = () => {
   ]
 },
 8: {
-  image: '/images/neet.jpg',
+  image: '/blogs/Neet - 4.png',
   tag: 'Success Stories',
   title: 'Top Scorers Share Their Secrets',
   author: 'Team Drift Academy',
@@ -655,7 +655,7 @@ const BlogDetail = () => {
 },
 
 9: {
-  image: '/images/jee.jpg',
+  image: '/hero-img/Neet - 3.png',
   tag: 'Study Hacks',
   title: 'Active Learning Techniques That Work',
   author: 'Coach Dev Verma',
@@ -735,7 +735,7 @@ const BlogDetail = () => {
 },
 
 10:{
-  image: '/images/hero.jpg',
+  image: '/hero-img/Neet - 2.png',
   tag: 'Exam Tips',
   title: 'Understanding Question Paper Weightage',
   author: 'Prof. Sandeep Rao',
@@ -801,7 +801,7 @@ const BlogDetail = () => {
   ]
 },
 11: {
-  image: '/images/neet.jpg',
+  image: '/hero-img/Neet - 1.png',
   tag: 'Study Hacks',
   title: 'Creating an Effective Study Schedule',
   author: 'Coach Priya Nair',
@@ -872,7 +872,7 @@ const BlogDetail = () => {
 }
 ,
 12: {
-  image: '/images/jee.jpg',
+  image: '/hero-img/Neet - 3.png',
   tag: 'Motivation',
   title: 'Building Confidence During Preparation',
   author: 'Dr. Aditi Sharma',
