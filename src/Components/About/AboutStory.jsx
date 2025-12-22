@@ -30,7 +30,9 @@ export default function AboutStory() {
             viewport={{ once: true }}
             className="text-gray-600 leading-relaxed mb-4"
           >
-           Drift Academy was born from a simple belief: every student deserves the right guidance to achieve big dreams. We help learners prepare for competitive exams like NEET, JEE, and AMU by building strong fundamentals, smart study habits, and the confidence needed to face exams fearlessly. Our focus isn’t just on teaching—it’s on shaping focused, motivated, and successful students.
+          Drift Academy is the perfect amalgamation of honesty, hard work, discipline, passion, and dedication. We believe that education is the steppingstone towards the success of each student. Drift Academy is the stepping-stone that many students can step on and achieve their dreams of getting admissions in the best medical and engineering colleges. Our institute has a team of eminent faculties expert in their respective disciplines. Our mission is to give selections to most of the students and not only of the best. We have been teaching since we were graduate students; this gave us a phase of transition in which we were on either side of the table. The faculty team that has impeccable record of selections in NEET/ JEE entrance exam has been put together to continue their legacy in a grandeur manner, Due to this, Drift Academy has become a leading premier coaching institute for preparation of medical and engineering entrance exams in Aligarh.
+         
+
           </motion.p>
 
           <motion.p
@@ -40,7 +42,7 @@ export default function AboutStory() {
             viewport={{ once: true }}
             className="text-gray-600 leading-relaxed"
           >
-            Our team is guided by experienced mentors from across the country, each bringing unique insights and years of proven teaching experience. At Drift Academy, we don’t believe in one-size-fits-all learning. Every student receives personal attention, a clear study plan, and continuous practice—so they can grow with confidence and reach their true academic potential.
+            we believe that every student has the potential to crack NEET or JEE — all they need is the right guidance, personal attention, and a focused environment. Our mission is to transform sincere aspirants into confident, result-oriented NEET - JEE achievers.
           </motion.p>
         </motion.div>
 

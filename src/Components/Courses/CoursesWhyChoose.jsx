@@ -16,7 +16,35 @@ const reasons = [
     title: "Proven Track Record",
     desc: "Join a legacy of success with top ranks in competitive exams.",
   },
+
+  // 🔽 NEW CARDS
+  {
+    icon: "🧠",
+    title: "NEET-Qualified Faculty",
+    desc: "All our teachers have personally cleared NEET. They don’t just teach — they mentor from real exam experience.",
+  },
+  {
+    icon: "🤝",
+    title: "Dedicated Student Mentorship",
+    desc: "Each student or batch is assigned a personal mentor for academic guidance and emotional support — anytime, anywhere.",
+  },
+  {
+    icon: "📡",
+    title: "Real-Time Attendance Alerts",
+    desc: "Our smart biometric system instantly notifies parents when students enter or leave the institute.",
+  },
+  {
+    icon: "📊",
+    title: "DRIFT All India Test Series (DATS)",
+    desc: "Students compete nationwide to assess real-time preparation, performance, and ranking.",
+  },
+  {
+    icon: "🚀",
+    title: "Foundation Programs (Class 8–10)",
+    desc: "Olympiad + NEET foundation courses designed to build strong academic roots from an early stage.",
+  },
 ];
+
 
 export default function CoursesWhyChoose() {
   return (
