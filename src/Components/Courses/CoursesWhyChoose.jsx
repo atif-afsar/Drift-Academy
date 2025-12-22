@@ -2,6 +2,11 @@ import { motion } from "framer-motion";
 
 const reasons = [
   {
+    icon: "🎓",
+    title: "Only 30 Students per Batch",
+    desc: "We believe real learning needs space, attention, and interaction. That’s why our classrooms are limited to just 30 students.",
+  },
+  {
     icon: "📘",
     title: "Expert Faculty",
     desc: "Learn from experienced educators who are masters in their fields.",
