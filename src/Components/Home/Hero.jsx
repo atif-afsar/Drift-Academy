@@ -14,7 +14,7 @@ export default function Hero() {
         />
 
         {/* Dark overlay for mobile readability */}
-        <div className="absolute inset-0 bg-black/40 md:bg-black/20" />
+        <div className="absolute inset-0 bg-black/10 md:bg-black/20" />
 
         {/* Content */}
         <div className="absolute inset-0 flex items-center">
