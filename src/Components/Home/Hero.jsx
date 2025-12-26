@@ -4,73 +4,49 @@ import { Link } from "react-router-dom";
 export default function Hero() {
   return (
     <section className="w-full mt-20 relative overflow-hidden">
-     
-      <div className="relative w-full h-[380px] sm:h-[450px] md:h-[550px] lg:h-[680px]">
-       <img
-          src="/hero-img/image2.jpg"
+      <div className="relative w-full h-[360px] sm:h-[450px] md:h-[550px] lg:h-[680px]">
+
+        {/* Background Image */}
+        <img
+          src="/hero-img/image.jpg"
           alt="hero-bg"
-          className="w-full h-full object-cover brightness-75"
+          className="w-full h-full object-cover object-center brightness-90"
         />
 
+        {/* Dark overlay for mobile readability */}
+        <div className="absolute inset-0 bg-black/40 md:bg-black/20" />
+
         {/* Content */}
-        <div
-          className="
-          absolute inset-0 
-          flex flex-col justify-center 
-          px-4 sm:px-6 md:px-10 lg:px-24
-          mt-28 sm:mt-32 md:mt-0
-        "
-        >
-          {/* GRADIENT BEHIND TEXT ONLY */}
-          <div
-            className="
-            max-w-2xl p-4 sm:p-6 
-            rounded-xl 
-           
-          "
-          >
-            <h1
-              className="
-              text-3xl 
-              sm:text-4xl 
-              md:text-6xl 
-              lg:text-7xl 
-              font-extrabold 
-              text-white leading-tight
-            "
-            >
-             <span className="text-[#055893]">Achieve Your</span> <span className="text-[#f6821c]">Dream</span>
-            </h1>
+        <div className="absolute inset-0 flex items-center">
+          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-24">
 
-            <p
-              className="
-              mt-3 
-              text-white/90 
-              text-base 
-              sm:text-lg 
-              md:text-2xl
-            "
-            >
-              With Expert Guidance & Proven Results.
-            </p>
+            <div className="max-w-2xl">
+              <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight text-center md:text-left">
+                Achieve Your{" "}
+                <span className="text-[#f6821c]">Dream</span>
+              </h1>
 
-            <Link
-              to="/contact"
-              className="
-                mt-5 inline-block 
-                bg-[#f6821c] hover:bg-white 
-                text-white hover:text-[#f6821c] font-semibold 
-                text-sm sm:text-lg md:text-xl 
-                px-6 py-3 sm:px-8 sm:py-3 
-                rounded-lg shadow-lg 
-                transition-all duration-300
-              "
-            >
-              ENROLL NOW
-            </Link>
-            <a href="tel:+917300666551" className="ml-4 inline-block bg-white hover:bg-[#f6821c] text-[#f6821c] hover:text-white font-semibold text-sm sm:text-lg md:text-xl px-6 py-3 sm:px-8 sm:py-3 rounded-lg shadow-lg transition-all duration-300">
-              Call Now
-            </a>
+              <p className="mt-3 text-white/90 text-sm sm:text-lg md:text-2xl text-center md:text-left">
+                Expert guidance and proven results to unlock your potential.
+              </p>
+
+              <div className="mt-6 flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
+                <Link
+                  to="/contact"
+                  className="bg-[#f6821c] hover:bg-white text-white hover:text-[#f6821c] font-semibold text-sm sm:text-lg md:text-xl px-6 py-3 rounded-lg shadow-lg transition-all duration-300 text-center"
+                >
+                  ENROLL NOW
+                </Link>
+
+                <a
+                  href="tel:+917300666551"
+                  className="bg-white hover:bg-[#f6821c] text-[#f6821c] hover:text-white font-semibold text-sm sm:text-lg md:text-xl px-6 py-3 rounded-lg shadow-lg transition-all duration-300 text-center"
+                >
+                  Call Now
+                </a>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
