@@ -56,7 +56,7 @@ export default function AboutStory() {
           <motion.img
             whileHover={{ scale: 1.03 }}
             transition={{ duration: 0.3 }}
-            src="/about-img/team.png"
+            src="/about-img/story.png"
             alt="our team"
             className="rounded-2xl w-full shadow-lg"
           />

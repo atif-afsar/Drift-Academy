@@ -4,16 +4,13 @@ import { Link } from "react-router-dom";
 export default function Hero() {
   return (
     <section className="w-full mt-20 relative overflow-hidden">
-      {/* Video Background */}
+     
       <div className="relative w-full h-[380px] sm:h-[450px] md:h-[550px] lg:h-[680px]">
-        <iframe
-          className="w-full h-full object-cover"
-          src="https://www.youtube.com/embed/t88fZ6u-cwM?autoplay=1&mute=1&controls=0&loop=1&playlist=t88fZ6u-cwM&playsinline=1&modestbranding=1&showinfo=0&rel=0"
-          title="Hero Background Video"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          referrerPolicy="strict-origin-when-cross-origin"
-        ></iframe>
+       <img
+          src="/hero-img/image2.jpg"
+          alt="hero-bg"
+          className="w-full h-full object-cover brightness-75"
+        />
 
         {/* Content */}
         <div
@@ -42,7 +39,7 @@ export default function Hero() {
               text-white leading-tight
             "
             >
-              Achieve Your <span className="text-[#f6821c]">Dream</span>
+             <span className="text-[#055893]">Achieve Your</span> <span className="text-[#f6821c]">Dream</span>
             </h1>
 
             <p

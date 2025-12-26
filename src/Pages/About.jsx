@@ -48,7 +48,7 @@ const About = () => {
       <AboutHero />
       <AboutMission />
       <AboutWhyChoose />
-      <AboutFaculty />
+      {/* <AboutFaculty /> */}
       <DriftCycleSection />
       <AboutTeaching />
       <AboutCTA />
