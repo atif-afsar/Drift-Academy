@@ -5,6 +5,7 @@ import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Courses from "./Pages/Courses";
 import Result from "./Pages/Result";
+import ResultExam from "./Pages/ResultExam";
 import Contact from "./Pages/Contact";
 import Loader from "./Components/Loader";
 import SmoothScroll from "./Pages/SmoothScroll";
@@ -42,6 +43,9 @@ const App = () => {
               <Route path="/about" element={<About />} />
               <Route path="/courses" element={<Courses />} />
               <Route path="/results" element={<Result />} />
+              <Route path="/results/year/:year" element={<ResultExam />} />
+              <Route path="/results/:exam" element={<ResultExam />} />
+              <Route path="/results/:exam/:year" element={<ResultExam />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/blogs" element={<Blogs />} />
               {/* Lazy Loaded Routes */}

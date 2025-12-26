@@ -7,8 +7,6 @@ import StudentStories from "../Components/Results/StudentStories";
 import TopperVideo from "../Components/Results/TopperVideo";
 import ResultsCTA from "../Components/Results/ResultsCTA";
 import ResultBannerSection from "../Components/Results/ResultBannerSection";
-import ResultsShowcase from "../Components/Results/ResultsShowcase";
-
 const Result = () => {
   return (
     <div>
@@ -47,7 +45,7 @@ const Result = () => {
       {/* --------------------- PAGE CONTENT --------------------- */}
       <ResultsHero />
       <StatsSection />
-      <ResultsShowcase />
+      {/* <ResultsShowcase /> */}
       <ResultBannerSection />
       <StudentStories />
       <TopperVideo />
