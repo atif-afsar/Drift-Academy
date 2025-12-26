@@ -42,76 +42,46 @@ export default function Navbar() {
             </Link>
           </li>
 
-          {/* Results with hover-dropdown */}
-         <li>
-  <div className="flex items-center justify-between py-2">
-    
-    {/* RESULTS TEXT → OPENS PAGE */}
-    <Link
-      to="/results"
-      onClick={closeMenu}
-      className="flex-1 text-left"
-    >
-      Results
-    </Link>
+          {/* Results with hover-dropdown (desktop) */}
+          <li className="relative group">
+            <div className="flex items-center gap-2">
+              <Link to="/results" onClick={closeMenu} className="hover:text-blue-700 transition">
+                Results
+              </Link>
+              <span className="hidden md:inline-block text-gray-600">▼</span>
+            </div>
 
-    {/* DROPDOWN TOGGLE → OPENS MENU */}
-    <button
-      onClick={(e) => {
-        e.stopPropagation();
-        e.preventDefault();
-        setResultsOpen(!resultsOpen);
-      }}
-      className="ml-3 text-gray-600"
-      aria-label="Toggle results dropdown"
-    >
-      <span
-        className={`inline-block transition-transform duration-200 ${
-          resultsOpen ? "rotate-180" : ""
-        }`}
-      >
-        ▼
-      </span>
-    </button>
-  </div>
+            {/* Desktop dropdown: appears on hover, positioned absolute */}
+            <div className="hidden group-hover:block absolute left-0 top-full mt-2 bg-white shadow-md rounded-md p-4 min-w-[200px] z-50">
+              <div className="text-sm text-gray-500 font-semibold">Exams</div>
 
-  {/* DROPDOWN CONTENT */}
-  {resultsOpen && (
-    <div className="mt-2 ml-3 border-l pl-4 space-y-2">
+              <Link to="/results/neet" onClick={closeMenu} className="block py-1 hover:text-blue-700">
+                NEET
+              </Link>
 
-      <div className="text-sm text-gray-500 font-semibold">Exams</div>
+              <Link to="/results/jee" onClick={closeMenu} className="block py-1 hover:text-blue-700">
+                JEE
+              </Link>
 
-      <Link to="/results/neet" onClick={closeMenu} className="block py-1">
-        NEET
-      </Link>
+              <Link to="/results/amu" onClick={closeMenu} className="block py-1 hover:text-blue-700">
+                AMU Entrance
+              </Link>
 
-      <Link to="/results/jee" onClick={closeMenu} className="block py-1">
-        JEE
-      </Link>
+              <div className="pt-2 text-sm text-gray-500 font-semibold">Yearwise</div>
 
-      <Link to="/results/amu" onClick={closeMenu} className="block py-1">
-        AMU Entrance
-      </Link>
+              <Link to="/results/year/2025" onClick={closeMenu} className="block py-1 hover:text-blue-700">
+                2025
+              </Link>
 
-      <div className="pt-2 text-sm text-gray-500 font-semibold">
-        Yearwise
-      </div>
+              <Link to="/results/year/2024" onClick={closeMenu} className="block py-1 hover:text-blue-700">
+                2024
+              </Link>
 
-      <Link to="/results/year/2025" onClick={closeMenu} className="block py-1">
-        2025
-      </Link>
-
-      <Link to="/results/year/2024" onClick={closeMenu} className="block py-1">
-        2024
-      </Link>
-
-      <Link to="/results/year/2023" onClick={closeMenu} className="block py-1">
-        2023
-      </Link>
-
-    </div>
-  )}
-</li>
+              <Link to="/results/year/2023" onClick={closeMenu} className="block py-1 hover:text-blue-700">
+                2023
+              </Link>
+            </div>
+          </li>
 
 
           <li>
