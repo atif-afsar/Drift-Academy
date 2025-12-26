@@ -10,7 +10,6 @@ export const RESULT_IMAGES = {
   jee: {
     "2024": [
       "/results/jee.png",
-      "/results/jee/2024/result2.jpg",
     ],
   },
 
