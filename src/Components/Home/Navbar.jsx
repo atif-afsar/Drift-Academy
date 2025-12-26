@@ -43,39 +43,76 @@ export default function Navbar() {
           </li>
 
           {/* Results with hover-dropdown */}
-          <li className="relative group">
-            <Link to="/results" className="hover:text-blue-700 transition">
-              Results
-            </Link>
+         <li>
+  <div className="flex items-center justify-between py-2">
+    
+    {/* RESULTS TEXT → OPENS PAGE */}
+    <Link
+      to="/results"
+      onClick={closeMenu}
+      className="flex-1 text-left"
+    >
+      Results
+    </Link>
 
-            <div className="absolute left-0 mt-3 w-64 bg-white border rounded-lg shadow-lg py-3 opacity-0 invisible group-hover:visible group-hover:opacity-100 transform translate-y-1 group-hover:translate-y-0 transition-all z-50">
-              <div className="px-4">
-                <div className="text-sm font-semibold text-gray-600 mb-2">
-                  Exams
-                </div>
-                <Link
-                  to="/results/neet"
-                  className="block py-1 text-gray-700 hover:text-accent hover:text-blue-700"
-                >
-                  NEET
-                </Link>
-                <Link
-                  to="/results/jee"
-                  className="block py-1 text-gray-700 hover:text-accent hover:text-blue-700"
-                >
-                  JEE
-                </Link>
-                <Link
-                  to="/results/amu"
-                  className="block py-1 text-gray-700 hover:text-accent hover:text-blue-700"
-                >
-                  AMU Entrance
-                </Link>
+    {/* DROPDOWN TOGGLE → OPENS MENU */}
+    <button
+      onClick={(e) => {
+        e.stopPropagation();
+        e.preventDefault();
+        setResultsOpen(!resultsOpen);
+      }}
+      className="ml-3 text-gray-600"
+      aria-label="Toggle results dropdown"
+    >
+      <span
+        className={`inline-block transition-transform duration-200 ${
+          resultsOpen ? "rotate-180" : ""
+        }`}
+      >
+        ▼
+      </span>
+    </button>
+  </div>
 
-                <div className="border-t my-2"></div>
-              </div>
-            </div>
-          </li>
+  {/* DROPDOWN CONTENT */}
+  {resultsOpen && (
+    <div className="mt-2 ml-3 border-l pl-4 space-y-2">
+
+      <div className="text-sm text-gray-500 font-semibold">Exams</div>
+
+      <Link to="/results/neet" onClick={closeMenu} className="block py-1">
+        NEET
+      </Link>
+
+      <Link to="/results/jee" onClick={closeMenu} className="block py-1">
+        JEE
+      </Link>
+
+      <Link to="/results/amu" onClick={closeMenu} className="block py-1">
+        AMU Entrance
+      </Link>
+
+      <div className="pt-2 text-sm text-gray-500 font-semibold">
+        Yearwise
+      </div>
+
+      <Link to="/results/year/2025" onClick={closeMenu} className="block py-1">
+        2025
+      </Link>
+
+      <Link to="/results/year/2024" onClick={closeMenu} className="block py-1">
+        2024
+      </Link>
+
+      <Link to="/results/year/2023" onClick={closeMenu} className="block py-1">
+        2023
+      </Link>
+
+    </div>
+  )}
+</li>
+
 
           <li>
             <Link to="/contact" className="hover:text-blue-700 transition">
@@ -130,19 +167,33 @@ export default function Navbar() {
 
             {/* RESULTS DROPDOWN (MOBILE) */}
             <li>
-              <button
-                onClick={() => setResultsOpen(!resultsOpen)}
-                className="w-full flex items-center justify-between py-2 text-left"
-              >
-                <span>Results</span>
-                <span
-                  className={`transition-transform duration-200 ${
-                    resultsOpen ? "rotate-180" : ""
-                  }`}
+              <div className="w-full flex items-center justify-between py-2">
+                <Link
+                  to="/results"
+                  onClick={closeMenu}
+                  className="flex-1 text-left"
                 >
-                  ▼
-                </span>
-              </button>
+                  Results
+                </Link>
+
+                <button
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    e.preventDefault();
+                    setResultsOpen(!resultsOpen);
+                  }}
+                  className="ml-3 text-gray-600"
+                  aria-label="Toggle results dropdown"
+                >
+                  <span
+                    className={`transition-transform duration-200 ${
+                      resultsOpen ? "rotate-180" : ""
+                    }`}
+                  >
+                    ▼
+                  </span>
+                </button>
+              </div>
 
               {resultsOpen && (
                 <div className="mt-2 ml-3 border-l pl-4 space-y-2">
